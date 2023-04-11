@@ -32,48 +32,7 @@ main {
   padding: 20px;
   height: 3500px;
 }
-/* ============= INDEX ================= */
-@font-face {
-  font-family: "Nike";
-  src: url(../fonts/futura-condensed-extra-bold.otf);
-}
-
-@import url("https://fonts.googleapis.com/css2?family=Jost:wght@600&display=swap");
-/* ============= MOBILE =========== */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #f6f4d2;
-}
-
-main {
-  padding: 5px;
-}
-
-.header-principal-responsive {
-  text-align: center;
-  margin: 0;
-}
-
-.logo-responsive {
-  display: none;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-  font-family: "Jost", sans-serif;
-}
-
-li {
-  padding: 0.3em;
-}
-
+/* ============= INDEX =================  */
 /* =========== HEADER MOBILE ======== */
 .header-responsive {
   background-color: black;
@@ -253,7 +212,6 @@ li {
 
 /* ======== TABLETS ========= */
 @media (min-width: 600px) and (max-width: 768px) {
-
   /*=======  HEADER======== */
   .header-responsive {
     width: 100vw;
@@ -357,7 +315,6 @@ li {
 
 /* ============== TABLETS GRANDES ============== */
 @media (min-width: 768px) and (max-width: 1199px) {
-
   /* ========= HEADER ========== */
   .header-responsive {
     width: 100%;
@@ -563,7 +520,6 @@ li {
 
 /* ========= DESKTOP ========= */
 @media (min-width: 1201px) {
-
   /* ========= HEADER ========== */
   .header-responsive {
     width: 100%;
@@ -696,7 +652,170 @@ li {
     text-align: center;
   }
 }
+/* ====== HEADER======= */
+.header-box-1 {
+  background-color: black;
+  display: grid;
+  grid-template-columns: 150px 40px 660px;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+.nav-index {
+  width: 700px;
+}
+.header-principal {
+  font-family: "Nike";
+  color: aliceblue;
+  padding: 15px;
+  font-size: 2rem;
+  width: 150px;
+}
+.logo-1 {
+  width: 40px;
+}
+.logo-1 img {
+  width: 40px;
+}
+/* =============== PORTADA============== */
+.inicio-texto {
+  color: aliceblue;
+  text-align: center;
+  font-size: 3rem;
+  color: black;
+}
+.portada-box {
+  position: relative;
+  left: 130px;
+  background-image: url("../img/portadaa.jpg");
+  width: 1500px;
+  height: 900px;
+  flex-direction: column;
+}
+.texto-portada {
+  position: relative;
+  top: 500px;
+  font-family: "Jost", sans-serif;
+  color: aliceblue;
+  font-size: 45px;
+  padding: 20px;
+}
+.parrafo-portada {
+  position: relative;
+  top: 500px;
+  font-family: "Jost", sans-serif;
+  color: aliceblue;
+  font-size: 25px;
+  padding: 10px 20px 10px;
+}
+/* ============ PARRAFOS ============ */
+.parrafos {
+  font-family: "Jost", sans-serif;
+  display: flex;
+  flex-flow: row;
+  align-content: flex-start;
+  height: 700px;
+  padding: 20px;
+  gap: 25px;
+}
+.parrafo-1 h2 {
+  background-color: black;
+  width: 300px;
+  color: aliceblue;
+  border-radius: 10px;
+}
+.parrafo-1 p {
+  padding: 20px;
+}
+.parrafo-1 {
+  width: 350px;
+  height: 300px;
+  margin-left: 120px;
+}
+.parrafo-2 h2 {
+  background-color: black;
+  width: 320px;
+  color: aliceblue;
+  border-radius: 10px;
+}
+.parrafo-2 p {
+  padding: 20px;
+}
+.parrafo-2 {
+  width: 350px;
+  height: 350px;
+}
+.dunk-jordan {
+  position: relative;
+  left: 552px;
+  top: -500px;
+}
 
+/*========== GALERIA =========== */
+.galeria-imagenes {
+  display: grid;
+  grid-template-columns: 567.8px 537.8px 477.8px;
+  grid-template-rows: 3fr;
+  grid-template-areas:
+    "b-and-w jordan-r-and-w habano"
+    "frase tres-dedos dorsal"
+    "rostro tres-dedos dorsal";
+  gap: 20px;
+  padding: 70px;
+  background-color: #ded8d8;
+  border: 6px solid black;
+}
+.galeria-titulo {
+  position: relative;
+  top: 40px;
+  width: 100%;
+  justify-content: center;
+  color: aliceblue;
+  background-color: black;
+  justify-content: center;
+  text-align: center;
+}
+.b-and-w {
+  grid-area: b-and-w;
+}
+.jordan-r-and-w {
+  grid-area: jordan-r-and-w;
+}
+.habano {
+  grid-area: habano;
+}
+.rostro {
+  grid-area: rostro;
+}
+.tres-dedos {
+  grid-area: tres-dedos;
+  grid-row-end: 4;
+  width: 100%;
+  align-self: center;
+}
+.dorsal {
+  grid-area: dorsal;
+  justify-self: end;
+  align-self: flex-end;
+}
+.frase {
+  justify-self: center;
+}
+.frase p {
+  font-family: "Jost", sans-serif;
+  text-align: center;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  width: 460px;
+  grid-area: frase;
+}
+/* ========== FOOTER ========= */
+footer {
+  text-align: center;
+  padding: 20px;
+}
 /* ============ SOBRE JORDAN ========== */
 .main-dos {
   height: 4000px;
@@ -763,7 +882,6 @@ li {
   flex-wrap: wrap;
   justify-content: space-around;
   column-gap: 20px;
-  
 }
 .parrafos-sobre h3 {
   font-family: "Nike";
