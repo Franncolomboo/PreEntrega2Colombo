@@ -1093,6 +1093,9 @@ main {
   margin: 10px;
 }
 /* ======= SALON DORADO RESET AND CONFIGS ========= */
+.salon-dorado-main {
+  height: 3300px;
+}
 .header-box-4 {
   background-color: black;
   display: grid;
@@ -1121,6 +1124,7 @@ main {
   background-color: rgb(120, 30, 30);
 }
 .footer-salon {
+  text-align: center;
   color: white;
   margin: 10px;
   padding: 10px;
