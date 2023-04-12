@@ -503,6 +503,9 @@ main {
 
 /* ========= DESKTOP ========= */
 @media (min-width: 1201px) {
+  .main-index {
+    height: 2900px;
+  }
   /* ========= HEADER ========== */
   .header-responsive {
     width: 100%;
