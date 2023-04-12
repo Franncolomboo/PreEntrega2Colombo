@@ -769,11 +769,6 @@ main {
 .logo-3 img {
   width: 40px;
 }
-/* ======= FOOTER ======== */
-.footer-tres {
-  padding: 20px;
-  margin: 10px;
-}
 /* ========== PRODUCTOS =========== */
 .titulo-productos {
   text-align: center;
@@ -1090,6 +1085,12 @@ main {
 .btn-seis:hover {
   background-color: #faa307;
   border: 1px solid #252422;
+}
+/* ================= FOOTER ============== */
+.footer-tres {
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
 }
 /* ======= SALON DORADO RESET AND CONFIGS ========= */
 .header-box-4 {
