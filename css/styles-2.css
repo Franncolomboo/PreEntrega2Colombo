@@ -16,13 +16,6 @@ body {
 main {
   padding: 5px;
 }
-.header-principal-responsive {
-  text-align: center;
-  margin: 0;
-}
-.logo-responsive {
-  display: none;
-}
 a {
   text-decoration: none;
   color: white;
@@ -30,18 +23,8 @@ a {
 }
 li {
   padding: 0.3em;
-}
-/* =========== HEADER MOBILE ======== */
-.header-responsive {
-  background-color: black;
-  width: 100vw;
-  color: white;
-  font-family: "Nike";
-  display: grid;
-  grid-template-columns: (1);
-  padding: 40px;
-}
-/* ================== NAV ============== */
+} 
+/* ================== HEADER-NAV ============== */
 .navbar-nav {
   font-family: "Jost", sans-serif;
   font-size: 1.2rem;
@@ -76,6 +59,7 @@ li {
   margin: 0;
   gap: 20px;
 }
+
 /* =============== INICIO ============ */
 .titulo-inicio {
   font-family: "Nike";
