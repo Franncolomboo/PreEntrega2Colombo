@@ -67,7 +67,6 @@ main {
   margin: 0;
   gap: 20px;
 }
-
 /* =============== INICIO ============ */
 .titulo-inicio {
   font-family: "Nike";
@@ -641,33 +640,8 @@ main {
 /* ============ SOBRE JORDAN ========== */
 .main-dos {
   height: 4000px;
-  font-family: "Jost", sans-serif;
 }
 /* ========= HEADER SOBRE JORDAN =========== */
-.header-box-2 {
-  background-color: black;
-  display: grid;
-  grid-template-columns: 150px 40px 660px;
-  justify-content: space-between;
-  text-align: center;
-  align-items: center;
-}
-.nav-sobre {
-  width: 700px;
-}
-.header-secundario {
-  font-family: "Nike";
-  color: aliceblue;
-  padding: 15px;
-  font-size: 2rem;
-  width: 150px;
-}
-.logo-2 {
-  width: 40px;
-}
-.logo-2 img {
-  width: 40px;
-}
 /* ============ TITTLE ========== */
 .sobre-jordan {
   text-align: center;
