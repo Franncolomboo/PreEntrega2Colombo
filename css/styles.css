@@ -32,169 +32,613 @@ main {
   padding: 20px;
   height: 3500px;
 }
-/* ====== HEADER======= */
-.header-box-1 {
+/* ================== HEADER-NAV ============== */
+.navbar-nav {
+  font-family: "Jost", sans-serif;
+  font-size: 1.2rem;
+  gap: 20px;
+  padding-left: 20px;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: red;
+}
+
+.background-color-nav {
   background-color: black;
-  display: grid;
-  grid-template-columns: 150px 40px 660px;
-  justify-content: space-between;
-  text-align: center;
-  align-items: center;
 }
-.nav-index {
-  width: 700px;
-}
-.header-principal {
+
+.link-h1-jordan {
   font-family: "Nike";
-  color: aliceblue;
-  padding: 15px;
   font-size: 2rem;
-  width: 150px;
+  color: white;
 }
-.logo-1 {
-  width: 40px;
+
+.ul-nav {
+  font-family: "Jost", sans-serif;
+  font-size: 1.2rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  gap: 20px;
 }
-.logo-1 img {
-  width: 40px;
-}
-/* =============== PORTADA============== */
-.inicio-texto {
-  color: aliceblue;
+
+/* =============== INICIO ============ */
+.titulo-inicio {
+  font-family: "Nike";
   text-align: center;
   font-size: 3rem;
   color: black;
-}
-.portada-box {
-  position: relative;
-  left: 130px;
-  background-image: url("../img/portadaa.jpg");
-  width: 1500px;
-  height: 900px;
-  flex-direction: column;
-}
-.texto-portada {
-  position: relative;
-  top: 500px;
-  font-family: "Jost", sans-serif;
-  color: aliceblue;
-  font-size: 45px;
-  padding: 20px;
-}
-.parrafo-portada {
-  position: relative;
-  top: 500px;
-  font-family: "Jost", sans-serif;
-  color: aliceblue;
-  font-size: 25px;
-  padding: 10px 20px 10px;
-}
-/* ============ PARRAFOS ============ */
-.parrafos {
-  font-family: "Jost", sans-serif;
-  display: flex;
-  flex-flow: row;
-  align-content: flex-start;
-  height: 700px;
-  padding: 20px;
-  gap: 25px;
-}
-.parrafo-1 h2 {
-  background-color: black;
-  width: 300px;
-  color: aliceblue;
-  border-radius: 10px;
-}
-.parrafo-1 p {
-  padding: 20px;
-}
-.parrafo-1 {
-  width: 350px;
-  height: 300px;
-  margin-left: 120px;
-}
-.parrafo-2 h2 {
-  background-color: black;
-  width: 320px;
-  color: aliceblue;
-  border-radius: 10px;
-}
-.parrafo-2 p {
-  padding: 20px;
-}
-.parrafo-2 {
-  width: 350px;
-  height: 350px;
-}
-.dunk-jordan {
-  position: relative;
-  left: 552px;
-  top: -500px;
+  text-align: center;
+  transition: all 300ms;
+  margin: 0;
 }
 
-/*========== GALERIA =========== */
-.galeria-imagenes {
-  display: grid;
-  grid-template-columns: 567.8px 537.8px 477.8px;
-  grid-template-rows: 3fr;
-  grid-template-areas:
-    "b-and-w jordan-r-and-w habano"
-    "frase tres-dedos dorsal"
-    "rostro tres-dedos dorsal";
-  gap: 20px;
-  padding: 70px;
-  background-color: #ded8d8;
-  border: 6px solid black;
+.titulo-inicio:hover {
+  transform: scale(1.2);
 }
-.galeria-titulo {
-  position: relative;
-  top: 40px;
-  width: 100%;
-  justify-content: center;
-  color: aliceblue;
-  background-color: black;
-  justify-content: center;
+
+/* =============== PORTADA ============== */
+@media (max-width: 599px) {
+  .titulo-portada {
+    color: white;
+    font-family: "Nike";
+    font-size: 2rem;
+    background-color: black;
+    text-align: center;
+    margin: 0;
+    border-radius: 7px;
+  }
+
+  .parrafo-portada {
+    background-color: white;
+    border-radius: 7px;
+    font-size: 1.3rem;
+    font-family: "Jost";
+    text-align: center;
+    margin: 0;
+  }
+}
+
+/* ============= PARRAFOS ============= */
+.titulo-parrafos {
   text-align: center;
+  transition: all 300ms;
+  margin: 0;
 }
-.b-and-w {
-  grid-area: b-and-w;
+
+.titulo-parrafos:hover {
+  transform: scale(1.2);
 }
-.jordan-r-and-w {
-  grid-area: jordan-r-and-w;
+
+.parrafos-responsive {
+  display: grid;
+  grid-template-columns: 1;
+  margin: 10px;
+  font-family: "Jost";
 }
-.habano {
-  grid-area: habano;
+
+.parrafos-responsive p {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 15px;
+  font-size: 1.3rem;
+  margin: 5px;
 }
-.rostro {
-  grid-area: rostro;
+
+.titulo-parrafos {
+  font-family: "Nike";
+  font-size: 2rem;
 }
-.tres-dedos {
-  grid-area: tres-dedos;
-  grid-row-end: 4;
-  width: 100%;
-  align-self: center;
-}
-.dorsal {
-  grid-area: dorsal;
-  justify-self: end;
-  align-self: flex-end;
-}
-.frase {
-  justify-self: center;
-}
-.frase p {
-  font-family: "Jost", sans-serif;
+
+.parrafos-responsive p {
   text-align: center;
   padding: 10px;
+  font-family: "Jost", sans-serif;
+}
+
+.dunk-jordan {
+  display: none;
+}
+
+/* ============ GALERIA ========= */
+.galeria-titulo {
+  text-align: center;
+  font-family: "Nike";
+  font-size: 3rem;
+  transition: all 300ms;
+  margin: 0;
+}
+
+.galeria-titulo:hover {
+  transform: scale(1.2);
+}
+
+.galeria-imagenes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 50px;
+}
+
+.fotos-galeria {
+  justify-content: center;
+  align-content: center;
+  gap: 50px;
+  height: 100%;
+  transition: all 300ms;
+}
+
+.fotos-galeria:hover {
+  transform: scale(1.05);
+}
+
+.frase-box {
+  padding: 15px;
+  margin: 0;
+}
+
+.frase-box p {
+  margin: 0;
+  text-align: center;
+  font-size: 1.3rem;
   background-color: black;
   color: white;
-  border-radius: 10px;
-  width: 460px;
-  grid-area: frase;
+  padding: 10px;
+  border-radius: 7px;
 }
-/* ========== FOOTER ========= */
-footer {
+
+.footer-inicio {
   text-align: center;
-  padding: 20px;
+}
+
+/* ======== TABLETS ========= */
+@media (min-width: 600px) and (max-width: 768px) {
+  /*=======  HEADER======== */
+  .header-responsive {
+    width: 100vw;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: minmax(80px, 5vh) 60px;
+    grid-template-areas:
+      "titulo logo"
+      "nav nav";
+  }
+
+  .header-principal-responsive {
+    align-self: center;
+    justify-self: end;
+    margin: 0;
+  }
+
+  .logo-responsive {
+    display: block;
+    justify-self: start;
+    align-self: center;
+    grid-area: logo;
+    padding: 1em;
+  }
+
+  /* ================= NAV ================= */
+  .navbar-nav {
+    font-family: "Jost", sans-serif;
+    font-size: 1.2rem;
+    gap: 20px;
+    padding-left: 20px;
+  }
+
+  .nav-link {
+    color: white;
+  }
+
+  .nav-link:hover {
+    color: red;
+  }
+
+  .background-color-nav {
+    background-color: black;
+  }
+
+  .link-h1-jordan {
+    font-family: "Nike";
+    font-size: 2rem;
+    color: white;
+  }
+
+  .ul-nav {
+    font-family: "Jost", sans-serif;
+    font-size: 1.2rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 20px;
+  }
+
+  /* ======== PORTADA ======== */
+
+  .portada-box-responsive {
+    display: block;
+    position: relative;
+    background-image: url("../img/portadaa2.jpg");
+    flex-direction: column;
+    height: 406px;
+    width: 750px;
+    transition: all 300ms;
+  }
+
+  .portada-box-responsive:hover {
+    transform: scale(1.02);
+  }
+
+  .parrafo-portada {
+    display: none;
+  }
+
+  .titulo-portada {
+    color: white;
+    font-size: 2rem;
+    font-family: "Nike";
+    position: relative;
+    top: 170px;
+  }
+
+  /* ================== PARRAFOS ================== */
+  .titulo-parrafos {
+    font-family: "Nike";
+    font-size: 2rem;
+  }
+
+  .parrafos-responsive p {
+    text-align: center;
+    padding: 10px;
+    font-family: "Jost", sans-serif;
+  }
+}
+
+/* ============== TABLETS GRANDES ============== */
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* ========= HEADER ========== */
+  .header-responsive {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    text-align: center;
+  }
+
+  .header-principal-responsive {
+    align-self: center;
+    justify-self: end;
+    margin: 0;
+  }
+
+  .logo-responsive {
+    display: block;
+    padding: 1em;
+  }
+
+  /* ================ NAV ============= */
+  .navbar-nav {
+    font-family: "Jost", sans-serif;
+    font-size: 1.2rem;
+    gap: 20px;
+    padding-left: 20px;
+  }
+
+  .nav-link {
+    color: white;
+  }
+
+  .nav-link:hover {
+    color: red;
+  }
+
+  .background-color-nav {
+    background-color: black;
+  }
+
+  .link-h1-jordan {
+    font-family: "Nike";
+    font-size: 2rem;
+    color: white;
+  }
+
+  .ul-nav {
+    font-family: "Jost", sans-serif;
+    font-size: 1.2rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 20px;
+  }
+
+  /*=========== PORTADA ================ */
+  .portada-box-responsive {
+    display: block;
+    position: relative;
+    background-image: url("../img/portadaa2.jpg");
+    width: 750px;
+    height: 406px;
+    flex-direction: column;
+    transition: all 300ms;
+  }
+
+  .portada-box-responsive:hover {
+    transform: scale(1.02);
+  }
+
+  .titulo-portada {
+    position: relative;
+    top: 120px;
+    font-family: "Nike", sans-serif;
+    color: aliceblue;
+    font-size: 2rem;
+    padding: 20px;
+  }
+
+  .parrafo-portada {
+    position: relative;
+    top: 120px;
+    font-family: "Jost", sans-serif;
+    color: aliceblue;
+    font-size: 1.5rem;
+    padding: 10px 20px 10px;
+  }
+
+  /* =================== PARRAFOS================ */
+  .titulo-parrafos {
+    font-family: "Nike";
+    font-size: 2rem;
+  }
+
+  .parrafos-responsive p {
+    text-align: center;
+    padding: 10px;
+    font-family: "Jost", sans-serif;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 858px) {
+  .logo-responsive {
+    display: none;
+  }
+
+  /* ================= NAV =================== */
+  .navbar-nav {
+    font-family: "Jost", sans-serif;
+    font-size: 1.2rem;
+    gap: 20px;
+    padding-left: 20px;
+  }
+
+  .nav-link {
+    color: white;
+  }
+
+  .nav-link:hover {
+    color: red;
+  }
+
+  .background-color-nav {
+    background-color: black;
+  }
+
+  .link-h1-jordan {
+    font-family: "Nike";
+    font-size: 2rem;
+    color: white;
+  }
+
+  .ul-nav {
+    font-family: "Jost", sans-serif;
+    font-size: 1.2rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 20px;
+  }
+
+  /*  ========== PARRAFOS =========== */
+  .titulo-parrafos {
+    font-family: "Nike";
+    font-size: 2rem;
+  }
+
+  .parrafos-responsive p {
+    text-align: center;
+    padding: 10px;
+    font-family: "Jost", sans-serif;
+  }
+
+  /* ============== GALERIA ================ */
+  .galeria-imagenes {
+    display: flex;
+    flex-direction: 2 row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 50px;
+  }
+}
+
+@media (min-width: 859px) and (max-width: 1200px) {
+  .navbar-nav {
+    font-family: "Jost", sans-serif;
+    font-size: 1.2rem;
+    gap: 20px;
+    padding-left: 20px;
+  }
+
+  .nav-link {
+    color: white;
+  }
+
+  .nav-link:hover {
+    color: red;
+  }
+
+  .background-color-nav {
+    background-color: black;
+  }
+
+  .link-h1-jordan {
+    font-family: "Nike";
+    font-size: 2rem;
+    color: white;
+  }
+
+  .ul-nav {
+    font-family: "Jost", sans-serif;
+    font-size: 1.2rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 20px;
+  }
+}
+
+/* ========= DESKTOP ========= */
+@media (min-width: 1201px) {
+  /* ========= HEADER ========== */
+  .header-responsive {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+  }
+
+  .header-principal-responsive {
+    align-self: center;
+    justify-self: end;
+  }
+
+  /* ================= NAV BAR ===================== */
+  .navbar-nav {
+    font-family: "Jost", sans-serif;
+    font-size: 1.2rem;
+    gap: 20px;
+    padding-left: 20px;
+  }
+
+  .nav-link {
+    color: white;
+  }
+
+  .nav-link:hover {
+    color: red;
+  }
+
+  .background-color-nav {
+    background-color: black;
+  }
+
+  .link-h1-jordan {
+    font-family: "Nike";
+    font-size: 2rem;
+    color: white;
+  }
+
+  .ul-nav {
+    font-family: "Jost", sans-serif;
+    font-size: 1.2rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 20px;
+  }
+
+  /* ==============  PORTADA =================== */
+  .portada-box-responsive {
+    display: block;
+    position: relative;
+    background-image: url("../img/portadaa.jpg");
+    width: 1910px;
+    height: 1034px;
+    flex-direction: column;
+    transition: all 300ms;
+  }
+
+  .portada-box-responsive:hover {
+    transform: scale(1.02);
+  }
+
+  .titulo-portada {
+    position: relative;
+    top: 500px;
+    font-family: "Nike", sans-serif;
+    color: aliceblue;
+    font-size: 2rem;
+    padding: 20px;
+  }
+
+  .parrafo-portada {
+    position: relative;
+    top: 500px;
+    font-family: "Jost", sans-serif;
+    color: aliceblue;
+    font-size: 25px;
+    padding: 10px 20px 10px;
+  }
+
+  .logo-responsive {
+    display: block;
+    padding: 1em;
+  }
+
+  .nav-responsive {
+    gap: 20px;
+    display: flex;
+    justify-content: baseline;
+    text-align: center;
+    font-family: "Nike";
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  /* ================= PARRAFOS ================ */
+  .titulo-parrafos {
+    font-family: "Nike";
+    font-size: 2rem;
+  }
+
+  .parrafos-responsive p {
+    text-align: center;
+    padding: 10px;
+    font-family: "Jost", sans-serif;
+  }
+
+  /* =============== GALERIA =============== */
+  .galeria-imagenes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  /* ========== FRASE ============= */
+  .frase-box p {
+    padding: 15px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .footer-inicio {
+    text-align: center;
+  }
 }
 /* ============ SOBRE JORDAN ========== */
 .main-dos {
@@ -262,7 +706,6 @@ footer {
   flex-wrap: wrap;
   justify-content: space-around;
   column-gap: 20px;
-  
 }
 .parrafos-sobre h3 {
   font-family: "Nike";
