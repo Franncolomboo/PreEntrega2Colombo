@@ -520,6 +520,9 @@ main {
 
 /* ========= DESKTOP ========= */
 @media (min-width: 1201px) {
+  main {
+    height: 2800px;
+  }
   /* ========= HEADER ========== */
   .header-responsive {
     width: 100%;
