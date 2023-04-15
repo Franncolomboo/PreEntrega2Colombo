@@ -28,10 +28,17 @@ h2 {
 body {
   background-color: #f6f4d2;
 }
-main {
-  padding: 20px;
-  height: 3500px;
+.footer-inicio {
+  text-align: center;
+  padding: 1em;
 }
+/* ============ MEDIA FOOTER ========= */
+@media (min-width: 1302px) and (max-width: 1750px) {
+  .main-index {
+    height: 3000px;
+  }
+}
+
 /* ============= INDEX =================  */
 /* =========== HEADER MOBILE ======== */
 .header-responsive {
@@ -97,7 +104,6 @@ main {
 
 /* =============== PORTADA ============== */
 @media (max-width: 599px) {
-  .main-index{height: 4800px;}
   .portada-box-responsive {
     padding: 10px;
   }
@@ -210,13 +216,8 @@ main {
   border-radius: 7px;
 }
 
-.footer-inicio {
-  text-align: center;
-}
-
 /* ======== TABLETS ========= */
 @media (min-width: 600px) and (max-width: 768px) {
-  .main-index{height: 4930px;}
   /*=======  HEADER======== */
   .header-responsive {
     width: 100vw;
@@ -524,9 +525,6 @@ main {
 
 /* ========= DESKTOP ========= */
 @media (min-width: 1200px) {
-  .main-index {
-    height: 2700px;
-  }
   /* ========= HEADER ========== */
   .header-responsive {
     width: 100%;
@@ -655,10 +653,6 @@ main {
     color: black;
     border-radius: 5px;
     margin: 0;
-    text-align: center;
-  }
-
-  .footer-inicio {
     text-align: center;
   }
 }
