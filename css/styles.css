@@ -38,19 +38,7 @@ body {
     height: 3000px;
   }
 }
-
 /* ============= INDEX =================  */
-/* =========== HEADER MOBILE ======== */
-.header-responsive {
-  background-color: black;
-  width: 100vw;
-  color: white;
-  font-family: "Nike";
-  display: grid;
-  grid-template-columns: (1);
-  padding: 40px;
-}
-
 /* ================== NAV ============== */
 .navbar-nav {
   font-family: "Jost", sans-serif;
@@ -136,7 +124,7 @@ body {
 }
 
 .titulo-parrafos:hover {
-  transform: scale(1.2);
+  transform: scale(1.02);
 }
 
 .parrafos-responsive {
@@ -218,22 +206,6 @@ body {
 
 /* ======== TABLETS ========= */
 @media (min-width: 600px) and (max-width: 768px) {
-  /*=======  HEADER======== */
-  .header-responsive {
-    width: 100vw;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: minmax(80px, 5vh) 60px;
-    grid-template-areas:
-      "titulo logo"
-      "nav nav";
-  }
-
-  .header-principal-responsive {
-    align-self: center;
-    justify-self: end;
-    margin: 0;
-  }
-
   .logo-responsive {
     display: block;
     justify-self: start;
@@ -383,27 +355,10 @@ body {
 }
 /* ============== TABLETS GRANDES ============== */
 @media (min-width: 768px) and (max-width: 1199px) {
-  /* ========= HEADER ========== */
-  .header-responsive {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 40px;
-    text-align: center;
-  }
-
-  .header-principal-responsive {
-    align-self: center;
-    justify-self: end;
-    margin: 0;
-  }
-
   .logo-responsive {
     display: block;
     padding: 1em;
   }
-
   /* ================ NAV ============= */
   .navbar-nav {
     font-family: "Jost", sans-serif;
@@ -525,20 +480,6 @@ body {
 
 /* ========= DESKTOP ========= */
 @media (min-width: 1200px) {
-  /* ========= HEADER ========== */
-  .header-responsive {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 40px;
-  }
-
-  .header-principal-responsive {
-    align-self: center;
-    justify-self: end;
-  }
-
   /* ================= NAV BAR ===================== */
   .navbar-nav {
     font-family: "Jost", sans-serif;
@@ -659,33 +600,43 @@ body {
 
 /* ============ SOBRE JORDAN ========== */
 .main-dos {
-  height: 4000px;
+  height: 1500px;
   font-family: "Jost", sans-serif;
 }
-/* ========= HEADER SOBRE JORDAN =========== */
-.header-box-2 {
-  background-color: black;
-  display: grid;
-  grid-template-columns: 150px 40px 660px;
-  justify-content: space-between;
-  text-align: center;
-  align-items: center;
+@media (min-width: 390px) and (max-width: 412px) {
+  .main-dos {
+    height: 4000px;
+  }
 }
-.nav-sobre {
-  width: 700px;
+@media (min-width: 412px) and (max-width: 430px) {
+  .main-dos {
+    height: 3700px;
+  }
 }
-.header-secundario {
-  font-family: "Nike";
-  color: aliceblue;
-  padding: 15px;
-  font-size: 2rem;
-  width: 150px;
+@media (min-width: 430px) and (max-width: 480px) {
+  .main-dos {
+    height: 3500px;
+  }
 }
-.logo-2 {
-  width: 40px;
+@media (min-width: 481px) and (max-width: 577px) {
+  .main-dos {
+    height: 3100px;
+  }
 }
-.logo-2 img {
-  width: 40px;
+@media (min-width: 577px) and (max-width: 769px) {
+  .main-dos {
+    height: 2900px;
+  }
+}
+@media (min-width: 770px) and (max-width: 992px) {
+  .main-dos {
+    height: 2200px;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .main-dos {
+    height: 1700px;
+  }
 }
 /* ============ TITTLE ========== */
 .sobre-jordan {
@@ -693,84 +644,49 @@ body {
   font-size: 3rem;
   color: black;
 }
+@media (min-width: 390px) and (max-width: 577px) {
+  .sobre-jordan {
+    text-align: center;
+    font-size: 2.25rem;
+    color: black;
+  }
+}
 /* ============ LINEA DEL TIEMPO =================*/
-.vida-de-michael {
-  width: 400px;
-  height: 900px;
-  margin: 10px;
-}
-.comienzos {
-  margin: 10px;
-  width: 400px;
-  height: 500px;
-}
-.seleccion-nacional {
-  width: 400px;
-  height: 560px;
-  margin: 40px 0 0 0;
-}
-.Jordan-como {
-  width: 400px;
-  height: 980px;
-  margin: 40px 0 0 0;
-}
-.parrafos-sobre {
-  position: relative;
-  left: 360px;
-  width: 60vw;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  column-gap: 20px;
-}
 .parrafos-sobre h3 {
   font-family: "Nike";
-  color: aliceblue;
-  background-color: black;
-  font-size: 25px;
-  margin: 10px;
-  padding: 5px 15px 5px;
-  width: 300px;
-  border-radius: 10px;
+  font-size: 1.9rem;
+  color: rgb(176, 56, 56);
+  margin: 0;
+  transition: all 300ms;
+}
+.parrafos-sobre h3:hover {
+  transform: scale(1.04);
 }
 .parrafos-sobre p {
-  font-size: 25px;
+  font-family: "Jost", sans-serif;
+  font-size: 1.3rem;
+  padding: 25px 10px 25px 10px;
+  margin: 0;
 }
-
 /* ======== FOOTER ========== */
 .footer-sobre {
   text-align: center;
 }
-
 /* ============ SNKRS =========== */
 .main-tres {
   height: 1500px;
 }
-.header-box-3 {
-  background-color: black;
-  display: grid;
-  grid-template-columns: 150px 40px 660px;
-  justify-content: space-between;
-  text-align: center;
-  align-items: center;
-}
 .nav-snkrs {
   width: 700px;
 }
-.header-tres {
-  font-family: "Nike";
-  color: aliceblue;
-  padding: 15px;
-  font-size: 2rem;
-  width: 150px;
-}
+
 .logo-3 {
   width: 40px;
 }
 .logo-3 img {
   width: 40px;
 }
+
 /* ========== PRODUCTOS =========== */
 .titulo-productos {
   text-align: center;
@@ -1098,23 +1014,9 @@ body {
 .salon-dorado-main {
   height: 3300px;
 }
-.header-box-4 {
-  background-color: black;
-  display: grid;
-  grid-template-columns: 150px 40px 660px;
-  justify-content: space-between;
-  text-align: center;
-  align-items: center;
-}
+
 .nav-salon-dorado {
   width: 700px;
-}
-.header-cuatro {
-  font-family: "Nike";
-  color: aliceblue;
-  padding: 15px;
-  font-size: 2rem;
-  width: 150px;
 }
 .logo-4 {
   width: 40px;
@@ -1635,31 +1537,10 @@ div article p {
   padding: 15px;
 }
 /*  =============== ESTADISTICAS HEADER ===============*/
-
-.header-box-5 {
-  background-color: black;
-  display: grid;
-  grid-template-columns: 150px 40px 660px;
-  justify-content: space-between;
-  text-align: center;
-  align-items: center;
-}
 .nav-estadisticas {
   width: 700px;
 }
-.header-quinto {
-  font-family: "Nike";
-  color: aliceblue;
-  padding: 15px;
-  font-size: 2rem;
-  width: 150px;
-}
-.logo-5 {
-  width: 40px;
-}
-.logo-5 img {
-  width: 40px;
-}
+
 /* ============ PAGINA ESTADISTICAS =============== */
 .titulo-estadisticas {
   text-align: center;
