@@ -749,19 +749,6 @@ body {
   margin: 10px;
 }
 /* ======= SALON DORADO RESET AND CONFIGS ========= */
-.salon-dorado-main {
-  height: 3300px;
-}
-
-.nav-salon-dorado {
-  width: 700px;
-}
-.logo-4 {
-  width: 40px;
-}
-.logo-4 img {
-  width: 40px;
-}
 .body-salon-dorado {
   background-color: rgb(120, 30, 30);
 }
@@ -782,7 +769,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  gap: 130px;
+  gap: 150px;
 }
 div article p {
   padding: 10px;
