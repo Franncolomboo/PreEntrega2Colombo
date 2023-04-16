@@ -692,8 +692,8 @@ body {
   justify-content: space-evenly;
   gap: 150px;
 }
-/* CUERPO DEL PRODUCTO  A*/
-.tarjeta-1 {
+/* ============ CUERPOS DE LOS PRODUCTOS==========*/
+.tarjeta {
   width: 350px;
   height: 570px;
   overflow: hidden;
@@ -704,25 +704,25 @@ body {
   transition-duration: 0.9s;
   transition: all 300ms;
 }
-/* ========== ESTILO DEL PRODUCTO A ======= */
-.tarjeta-1 {
+/* ========== ESTILOS DE LOS PRODUCTOS ======= */
+.tarjeta {
   font-family: "Jost", sans-serif;
 }
 .titulo-del-producto {
   color: white;
   font-size: 23px;
 }
-.tarjeta-1 span {
+.tarjeta span {
   color: rgb(247, 234, 234);
 }
-.tarjeta-1:hover {
+.tarjeta:hover {
   box-shadow: 0 0 1.7em rgba(0, 0, 0, 0.5);
   transform: scale(1.1);
 }
-.tarjeta-1 img {
+.tarjeta img {
   width: 100%;
 }
-.body-producto-1 {
+.body-producto {
   height: 10%;
   display: flex;
   flex-direction: column;
@@ -731,264 +731,14 @@ body {
   padding: 15px;
 }
 /* ====== BOTON A ===== */
-.btn-uno {
+.btn-producto {
   background-color: #252422;
   border: 2px solid #ccc5b9;
   align-self: center;
   padding: 7px;
   border-radius: 5px;
 }
-.btn-uno:hover {
-  background-color: #faa307;
-  border: 1px solid #252422;
-}
-/* ======= CUERPO DEL PRODUCTO B ======== */
-.tarjeta-2 {
-  width: 350px;
-  height: 570px;
-  overflow: hidden;
-  background-color: rgba(141, 107, 76, 0.657);
-  box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.5);
-  cursor: pointer;
-  transition-property: box-shadow;
-  transition-duration: 0.9s;
-  transition: all 300ms;
-}
-/* ========== ESTILO DEL PRODUCTO B ======= */
-.tarjeta-2 {
-  font-family: "Jost", sans-serif;
-}
-.titulo-del-producto-2 {
-  color: white;
-  font-size: 23px;
-}
-.tarjeta-2 span {
-  color: rgb(247, 234, 234);
-}
-.tarjeta-2:hover {
-  box-shadow: 0 0 1.7em rgba(0, 0, 0, 0.5);
-  transform: scale(1.1);
-}
-.tarjeta-2 img {
-  width: 100%;
-}
-.body-producto-2 {
-  height: 10%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
-}
-/* ====== BOTON B ===== */
-.btn-dos {
-  background-color: #252422;
-  border: 2px solid #ccc5b9;
-  align-self: center;
-  padding: 7px;
-  border-radius: 5px;
-}
-.btn-dos:hover {
-  background-color: #faa307;
-  border: 1px solid #252422;
-}
-/* ======= CUERPO DEL PRODUCTO C ======== */
-.tarjeta-3 {
-  width: 350px;
-  height: 570px;
-  overflow: hidden;
-  background-color: rgba(141, 107, 76, 0.657);
-  box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.5);
-  cursor: pointer;
-  transition-property: box-shadow;
-  transition-duration: 0.9s;
-  transition: all 300ms;
-}
-/* ========== ESTILO DEL PRODUCTO C ======= */
-.tarjeta-3 {
-  font-family: "Jost", sans-serif;
-}
-.titulo-del-producto-3 {
-  color: white;
-  font-size: 23px;
-}
-.tarjeta-3 span {
-  color: rgb(247, 234, 234);
-}
-.tarjeta-3:hover {
-  box-shadow: 0 0 1.7em rgba(0, 0, 0, 0.5);
-  transform: scale(1.1);
-}
-.tarjeta-3 img {
-  width: 100%;
-}
-.body-producto-3 {
-  height: 10%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
-}
-/* ====== BOTON C ===== */
-.btn-tres {
-  background-color: #252422;
-  border: 2px solid #ccc5b9;
-  align-self: center;
-  padding: 7px;
-  border-radius: 5px;
-}
-.btn-tres:hover {
-  background-color: #faa307;
-  border: 1px solid #252422;
-}
-/* ======= CUERPO DEL PRODUCTO D ======== */
-.tarjeta-4 {
-  width: 350px;
-  height: 570px;
-  overflow: hidden;
-  background-color: rgba(141, 107, 76, 0.657);
-  box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.5);
-  cursor: pointer;
-  transition-property: box-shadow;
-  transition-duration: 0.9s;
-  transition: all 300ms;
-}
-/* ========== ESTILO DEL PRODUCTO D ======= */
-.tarjeta-4 {
-  font-family: "Jost", sans-serif;
-}
-.titulo-del-producto-4 {
-  color: white;
-  font-size: 23px;
-}
-.tarjeta-4 span {
-  color: rgb(247, 234, 234);
-}
-.tarjeta-4:hover {
-  box-shadow: 0 0 1.7em rgba(0, 0, 0, 0.5);
-  transform: scale(1.1);
-}
-.tarjeta-4 img {
-  width: 100%;
-}
-.body-producto-4 {
-  height: 10%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
-}
-/* ====== BOTON D ===== */
-.btn-cuatro {
-  background-color: #252422;
-  border: 2px solid #ccc5b9;
-  align-self: center;
-  padding: 7px;
-  border-radius: 5px;
-}
-.btn-cuatro:hover {
-  background-color: #faa307;
-  border: 1px solid #252422;
-}
-/* ======= CUERPO DEL PRODUCTO E ======== */
-.tarjeta-5 {
-  width: 350px;
-  height: 570px;
-  overflow: hidden;
-  background-color: rgba(141, 107, 76, 0.657);
-  box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.5);
-  cursor: pointer;
-  transition-property: box-shadow;
-  transition-duration: 0.9s;
-  transition: all 300ms;
-}
-/* ========== ESTILO DEL PRODUCTO E ======= */
-.tarjeta-5 {
-  font-family: "Jost", sans-serif;
-}
-.titulo-del-producto-5 {
-  color: white;
-  font-size: 23px;
-}
-.tarjeta-5 span {
-  color: rgb(247, 234, 234);
-}
-.tarjeta-5:hover {
-  box-shadow: 0 0 1.7em rgba(0, 0, 0, 0.5);
-  transform: scale(1.1);
-}
-.tarjeta-5 img {
-  width: 100%;
-}
-.body-producto-5 {
-  height: 10%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
-}
-/* ====== BOTON E ===== */
-.btn-cinco {
-  background-color: #252422;
-  border: 2px solid #ccc5b9;
-  align-self: center;
-  padding: 7px;
-  border-radius: 5px;
-}
-.btn-cinco:hover {
-  background-color: #faa307;
-  border: 1px solid #252422;
-}
-/* ======= CUERPO DEL PRODUCTO F ======== */
-.tarjeta-6 {
-  width: 350px;
-  height: 570px;
-  overflow: hidden;
-  background-color: rgba(141, 107, 76, 0.657);
-  box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.5);
-  cursor: pointer;
-  transition-property: box-shadow;
-  transition-duration: 0.9s;
-  transition: all 300ms;
-}
-/* ========== ESTILO DEL PRODUCTO F ======= */
-.tarjeta-6 {
-  font-family: "Jost", sans-serif;
-}
-.titulo-del-producto-6 {
-  color: white;
-  font-size: 23px;
-}
-.tarjeta-6 span {
-  color: rgb(247, 234, 234);
-}
-.tarjeta-6:hover {
-  box-shadow: 0 0 1.7em rgba(0, 0, 0, 0.5);
-  transform: scale(1.1);
-}
-.tarjeta-6 img {
-  width: 100%;
-}
-.body-producto-6 {
-  height: 10%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
-}
-/* ====== BOTON F ===== */
-.btn-seis {
-  background-color: #252422;
-  border: 2px solid #ccc5b9;
-  align-self: center;
-  padding: 7px;
-  border-radius: 5px;
-}
-.btn-seis:hover {
+.btn-producto:hover {
   background-color: #faa307;
   border: 1px solid #252422;
 }
