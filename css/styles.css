@@ -674,7 +674,6 @@ body {
 }
 /* ============ SNKRS =========== */
 
-
 /* ========== PRODUCTOS =========== */
 .titulo-productos {
   text-align: center;
@@ -1261,26 +1260,14 @@ div article p {
   align-items: center;
   padding: 15px;
 }
-/*  =============== ESTADISTICAS HEADER ===============*/
-.nav-estadisticas {
-  width: 700px;
-}
-
 /* ============ PAGINA ESTADISTICAS =============== */
 .titulo-estadisticas {
   text-align: center;
   font-size: 3rem;
 }
-.main-estadisticas {
-  height: 1800px;
-}
 /* =========== TABLA ================ */
 
 .tabla-estadisticas {
-  margin-top: 50px;
-  padding: 40px;
-  margin-left: 400px;
-  margin-right: auto;
   border-collapse: collapse;
   font-family: "Jost", sans-serif;
   background-color: rgb(164, 164, 164);
@@ -1309,14 +1296,15 @@ th abbr {
   color: red;
 }
 /* =========== FOTO FINAL ============= */
-.foto-final {
-  padding: 50px;
-  width: 1200px;
-  display: grid;
-  grid-template-columns: 1200px;
-  text-align: center;
+#img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
 }
-.foto-final p {
+.texto-imagen{
+  text-align: center;
+  margin: 0;
   font-family: "Jost", sans-serif;
   font-size: 2.5rem;
 }
