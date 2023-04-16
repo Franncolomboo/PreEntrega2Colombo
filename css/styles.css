@@ -673,19 +673,7 @@ body {
   text-align: center;
 }
 /* ============ SNKRS =========== */
-.main-tres {
-  height: 1500px;
-}
-.nav-snkrs {
-  width: 700px;
-}
 
-.logo-3 {
-  width: 40px;
-}
-.logo-3 img {
-  width: 40px;
-}
 
 /* ========== PRODUCTOS =========== */
 .titulo-productos {
@@ -702,7 +690,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  gap: 130px;
+  gap: 150px;
 }
 /* CUERPO DEL PRODUCTO  A*/
 .tarjeta-1 {
