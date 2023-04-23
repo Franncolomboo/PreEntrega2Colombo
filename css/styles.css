@@ -91,6 +91,11 @@ body {
 }
 
 /* =============== PORTADA ============== */
+@media (max-width: 500px) {
+  .parrafo-portada {
+    padding: 10px;
+  }
+}
 @media (max-width: 599px) {
   .portada-box-responsive {
     padding: 10px;
@@ -1302,7 +1307,7 @@ th abbr {
   margin-right: auto;
   padding: 25px;
 }
-.texto-imagen{
+.texto-imagen {
   text-align: center;
   margin: 0;
   font-family: "Jost", sans-serif;
