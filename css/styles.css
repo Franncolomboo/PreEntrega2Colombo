@@ -32,6 +32,13 @@ body {
   text-align: center;
   padding: 1em;
 }
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 0 , 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.table-responsive::-webkit-scrollbar {
+  width: 10px;
+  color: red;
+}
 /* ============ MEDIA FOOTER ========= */
 @media (min-width: 1302px) and (max-width: 1750px) {
   .main-index {
@@ -783,7 +790,7 @@ div article p {
   padding: 5px;
 }
 /*============= TROFEO 1 ============ */
-.trofeo-1 {
+.trofeo {
   width: 350px;
   height: 650px;
   overflow: hidden;
@@ -795,24 +802,26 @@ div article p {
   transition: all 300ms;
 }
 /* ============== ESTILO DEL TROFEO A ============= */
-.trofeo-1 {
+.trofeo {
   font-family: "Jost", sans-serif;
 }
-.titulo-trofeo-a {
+.titulo-trofeo {
+  text-align: center;
+  padding: 10px;
   color: white;
   font-size: 23px;
 }
-.trofeo-1 p {
+.descripcion-trofeo {
   color: rgb(247, 234, 234);
 }
-.trofeo-1:hover {
+.trofeo:hover {
   box-shadow: 0 0 1.7em rgba(0, 0, 0, 0.5);
   transform: scale(1.1);
 }
-.trofeo-1 img {
+.trofeo-imagen {
   width: 100%;
 }
-.body-trofeo-a {
+.body-trofeo {
   height: 10%;
   display: flex;
   flex-direction: column;
