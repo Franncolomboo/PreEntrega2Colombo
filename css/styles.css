@@ -688,6 +688,7 @@ body {
 
 /* ========== PRODUCTOS =========== */
 .titulo-productos {
+  color: white;
   text-align: center;
   font-size: 3rem;
   margin: 20px;
@@ -703,12 +704,15 @@ body {
   justify-content: space-evenly;
   gap: 150px;
 }
+#fondo-gradiente{
+  background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
+}
 /* ============ CUERPOS DE LOS PRODUCTOS==========*/
 .tarjeta {
   width: 350px;
   height: 570px;
   overflow: hidden;
-  background-color: rgba(141, 107, 76, 0.657);
+  background-color: #3d1635;
   box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.5);
   cursor: pointer;
   transition-property: box-shadow;
@@ -771,9 +775,14 @@ body {
 }
 /* ========== SALON DORADO PAGINA ====== */
 .titulo-salon {
+  margin: 20px;
   text-align: center;
   font-size: 3rem;
   color: #ffffff;
+  transition: all 300ms;
+}
+.titulo-salon:hover {
+  transform: scale(1.06);
 }
 .trofeos {
   display: flex;
