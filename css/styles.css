@@ -935,16 +935,43 @@ th abbr {
   color: red;
 }
 /* =========== FOTO FINAL ============= */
-#img-center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+@media  (max-width: 1200px) {
+  .foto-final {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .texto-imagen {
+    text-align: center;
+    margin: 0;
+    font-family: "Jost", sans-serif;
+    font-size: 2.5rem;
+  }
+  .main-dos {
+    height: 1700px;
+  }
+  .foto-final-2 {
+    display: none;
+  }
 }
-.texto-imagen {
-  text-align: center;
-  margin: 0;
-  font-family: "Jost", sans-serif;
-  font-size: 2.5rem;
+@media (min-width: 1200px) {
+  .main-dos {
+    height: 1700px;
+  }
+  .foto-final {
+  display: none;
+  }
+  .foto-final-2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .texto-imagen {
+    text-align: center;
+    margin: 0;
+    font-family: "Jost", sans-serif;
+    font-size: 2.5rem;
+  }
 }
 /* ======== FOOTER============ */
 .footer-estadisticas {
