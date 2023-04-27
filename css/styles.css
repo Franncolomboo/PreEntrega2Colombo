@@ -215,7 +215,17 @@ body {
   padding: 10px;
   border-radius: 7px;
 }
-
+/* ============= BOTON SCROLL ============ */
+.boton-smooth {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 125px;
+  border: 4px solid rgb(176, 56, 56);
+  border-radius: 10px;
+  background-color: rgb(176, 56, 56);
+  color: white;
+}
 /* ======== TABLETS ========= */
 @media (min-width: 600px) and (max-width: 768px) {
   .logo-responsive {
@@ -704,8 +714,18 @@ body {
   justify-content: space-evenly;
   gap: 150px;
 }
-.fondo-gradiente{
-  background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
+.fondo-gradiente {
+  background-image: linear-gradient(
+    to top,
+    #dbdcd7 0%,
+    #dddcd7 24%,
+    #e2c9cc 30%,
+    #e7627d 46%,
+    #b8235a 59%,
+    #801357 71%,
+    #3d1635 84%,
+    #1c1a27 100%
+  );
 }
 /* ============ CUERPOS DE LOS PRODUCTOS==========*/
 .tarjeta {
@@ -909,7 +929,7 @@ div article p {
   align-items: center;
   padding: 15px;
 }
-@media (max-width:450px){
+@media (max-width: 450px) {
   .anillo {
     height: 600px;
   }
@@ -951,7 +971,7 @@ th abbr {
   color: red;
 }
 /* =========== FOTO FINAL ============= */
-@media  (max-width: 1200px) {
+@media (max-width: 1200px) {
   .foto-final {
     display: block;
     margin-left: auto;
@@ -975,7 +995,7 @@ th abbr {
     height: 1700px;
   }
   .foto-final {
-  display: none;
+    display: none;
   }
   .foto-final-2 {
     display: block;
