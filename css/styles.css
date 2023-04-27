@@ -704,7 +704,7 @@ body {
   justify-content: space-evenly;
   gap: 150px;
 }
-#fondo-gradiente{
+.fondo-gradiente{
   background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
 }
 /* ============ CUERPOS DE LOS PRODUCTOS==========*/
@@ -712,6 +712,8 @@ body {
   width: 350px;
   height: 570px;
   overflow: hidden;
+  border: 2px solid white;
+  border-radius: 10px;
   background-color: #3d1635;
   box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.5);
   cursor: pointer;
@@ -745,7 +747,7 @@ body {
   align-items: center;
   padding: 15px;
 }
-/* ====== BOTON A ===== */
+/* ====== BOTON  ===== */
 .btn-producto {
   background-color: #252422;
   border: 2px solid #ccc5b9;
