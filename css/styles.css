@@ -6,7 +6,7 @@
   font-family: "Nike";
   src: url(../fonts/futura-condensed-extra-bold.otf);
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 * {
@@ -228,6 +228,12 @@ body {
   border-radius: 10px;
   background-color: rgb(176, 56, 56);
   color: white;
+  box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.5);
+  transition: all 300ms;
+}
+.boton-smooth:hover {
+  background-color: rgb(215, 70, 70);
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
 }
 /* ======== TABLETS ========= */
 @media (min-width: 600px) and (max-width: 768px) {
