@@ -6,6 +6,9 @@
   font-family: "Nike";
   src: url(../fonts/futura-condensed-extra-bold.otf);
 }
+html{
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
