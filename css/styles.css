@@ -52,7 +52,7 @@ body {
 }
 
 /* ============= BOTON SCROLL VARIANTE ============ */
-.boton_smooth {
+.boton_smooth--variante {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -64,7 +64,7 @@ body {
   box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.5);
   transition: all 300ms;
 }
-.boton_smooth:hover {
+.boton_smooth--variante:hover {
   background-color: rgb(61, 28, 208);
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
 }
@@ -953,6 +953,7 @@ div article p {
 }
 /* ============ PAGINA ESTADISTICAS =============== */
 .titulo_estadisticas {
+  color: white;
   font-family: "Nike";
   text-align: center;
   font-size: 3rem;
