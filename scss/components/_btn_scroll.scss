@@ -1,0 +1,17 @@
+/* ============= BOTON SCROLL ============ */
+.boton_smooth {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 125px;
+  border: 4px solid rgb(176, 56, 56);
+  border-radius: 10px;
+  background-color: rgb(176, 56, 56);
+  color: white;
+  box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.5);
+  transition: $transition;
+  &:hover {
+    background-color: rgb(215, 70, 70);
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+  }
+}

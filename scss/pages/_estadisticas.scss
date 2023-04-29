@@ -1,0 +1,80 @@
+/* ============ PAGINA ESTADISTICAS =============== */
+.titulo_estadisticas {
+  text-align: $text-align;
+  font-size: $font-size-titulo;
+}
+/* =========== TABLA ================ */
+
+.tabla_estadisticas {
+  border-collapse: collapse;
+  font-family: $fuente-ul-h2-parrafo;
+  background-color: rgb(164, 164, 164);
+  & td {
+    border: 3px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  & th {
+    border: 3px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: black;
+  }
+}
+th abbr {
+  text-decoration: none;
+}
+
+.resultados th {
+  background-color: white;
+  color: red;
+}
+
+/* =========== FOTO FINAL ============= */
+@media (max-width: 1200px) {
+  .foto_final {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    &_2 {
+      display: none;
+    }
+  }
+
+  .texto_imagen {
+    text-align: $text-align;
+    margin: 0;
+    font-family: $fuente-ul-h2-parrafo;
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .foto_final {
+    display: none;
+  }
+
+  .foto_final_2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .texto_imagen {
+    text-align: $text-align;
+    margin: 0;
+    font-family: $fuente-ul-h2-parrafo;
+    font-size: 2.5rem;
+  }
+}
+/* ======== FOOTER============ */
+.footer_estadisticas {
+  text-align: $text-align;
+  padding: 10px;
+  margin: 20px;
+}

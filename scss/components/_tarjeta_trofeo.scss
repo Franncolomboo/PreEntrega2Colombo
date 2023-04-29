@@ -1,0 +1,46 @@
+/*============= TROFEO  ============ */
+.trofeo {
+  width: 350px;
+  height: 650px;
+  overflow: hidden;
+  background-color: rgba(222, 219, 56, 0.587);
+  box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition-property: box-shadow;
+  transition-duration: 0.9s;
+  transition: $transition;
+}
+
+/* ============== ESTILO DEL TROFEO  ============= */
+.trofeo {
+  font-family: $fuente-ul-h2-parrafo;
+
+  &:hover {
+    box-shadow: 0 0 1.7em rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+  }
+
+  &_imagen {
+    width: 100%;
+  }
+}
+
+.titulo_trofeo {
+  text-align: $text-align;
+  padding: 10px;
+  color: white;
+  font-size: 23px;
+}
+
+.descripcion_trofeo {
+  color: rgb(247, 234, 234);
+}
+
+.body_trofeo {
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: $align-body-trofeo;
+  padding: 15px;
+}

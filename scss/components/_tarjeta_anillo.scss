@@ -1,0 +1,54 @@
+/*============= ANILLO 1 ============ */
+.anillos {
+  margin: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 130px;
+}
+
+.anillo {
+  width: 470px;
+  height: 680px;
+  overflow: hidden;
+  background-color: rgba(222, 219, 56, 0.587);
+  box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition-property: box-shadow;
+  transition-duration: 0.9s;
+  transition: $transition;
+}
+
+/* ============== ESTILO DEL ANILLO A ============= */
+.anillo {
+  font-family: $fuente-ul-h2-parrafo;
+
+  &:hover {
+    box-shadow: 0 0 1.7em rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+
+    &_imagen {
+      width: 100%;
+    }
+  }
+}
+
+.titulo_anillo {
+  color: white;
+  font-size: 23px;
+  text-align: $text-align;
+}
+
+.descripcion_anillo {
+  color: rgb(247, 234, 234);
+}
+
+.body_anillo {
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: $align-body-anillo;
+  padding: 15px;
+}

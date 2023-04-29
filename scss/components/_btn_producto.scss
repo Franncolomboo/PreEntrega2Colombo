@@ -1,0 +1,12 @@
+/* ====== BOTON  ===== */
+.btn_producto {
+  background-color: #252422;
+  border: 2px solid #ccc5b9;
+  align-self: center;
+  padding: 7px;
+  border-radius: 5px;
+  &:hover {
+    background-color: #faa307;
+    border: 1px solid #252422;
+  }
+}

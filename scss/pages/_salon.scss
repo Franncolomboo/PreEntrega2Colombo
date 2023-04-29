@@ -1,0 +1,49 @@
+/* ======= SALON DORADO RESET AND CONFIGS ========= */
+.body_salon_dorado {
+  background-color: rgb(120, 30, 30);
+}
+.footer_salon {
+  text-align: $text-align;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* ========== SALON DORADO PAGINA ====== */
+.titulo_salon {
+  margin: 20px;
+  text-align: $text-align;
+  font-size: $font-size-titulo;
+  color: #ffffff;
+  transition: $transition;
+  &:hover {
+    transform: scale(1.06);
+  }
+}
+.trofeos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 150px;
+}
+div article p {
+  padding: 10px;
+  margin: 10px;
+}
+.anillos article p {
+  padding: 5px;
+}
+/* ============= SECCION ANILLOS============ */
+.titulo_anillos {
+  margin: 20px;
+  padding: 10px;
+  text-align: $text-align;
+  font-size: 3rem;
+  color: white;
+}
+@media (max-width: 450px) {
+  .anillo {
+    height: 600px;
+  }
+}
