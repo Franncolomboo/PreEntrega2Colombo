@@ -7,7 +7,7 @@
 }
 
 .nav-link {
-  color: white;
+  color: $color-links;
   &:hover {
     color: $hover-color;
   }
@@ -18,8 +18,8 @@
 
 .link-h1-jordan {
   font-family: "Nike";
-  font-size: 2rem;
-  color: white;
+  font-size: $font-size-h1;
+  color: $color-links;
 }
 
 .ul-nav {
@@ -36,7 +36,7 @@
   font-family: "Nike";
   text-align: center;
   font-size: 3rem;
-  color: black;
+  color: $color-fuente-parrafos;
   text-align: center;
   transition: $transition;
   margin: 0;
@@ -102,7 +102,7 @@
 }
 .titulo_parrafos {
   font-family: "Nike";
-  font-size: 2rem;
+  font-size: $titulo-parrafos;
 }
 
 .parrafo {
@@ -164,19 +164,19 @@
   }
 
   .nav_link {
-    color: white;
+    color: $color-links;
     &:hover {
       color: $hover-color;
     }
   }
   .background_color_nav {
-    background-color: black;
+    background-color: $color-nav;
   }
 
   .link_h1_jordan {
     font-family: "Nike";
-    font-size: 2rem;
-    color: white;
+    font-size: $font-size-h1;
+    color: $color-links;
   }
 
   .ul_nav {
@@ -205,7 +205,7 @@
   }
   .titulo_portada {
     color: white;
-    font-size: 2rem;
+    font-size: $titulo-parrafos;
     font-family: "Nike";
     position: relative;
     top: 170px;
@@ -216,7 +216,7 @@
   /* ================== PARRAFOS ================== */
   .titulo_parrafos {
     font-family: "Nike";
-    font-size: 2rem;
+    font-size: $titulo-parrafos;
   }
 
   .parrafos_responsive p {
@@ -226,3 +226,280 @@
   }
 }
 /* =============== MODIFICACION DE LA PORTADA ============== */
+@media (min-width: 769px) and (max-width: 858px) {
+  /* ========================= NAV ============================= */
+  .navbar_nav {
+    font-family: $fuente-ul-h2-parrafo;
+    font-size: 1.2rem;
+    gap: 20px;
+    padding-left: 20px;
+  }
+  .nav_link {
+    color: $color-links;
+    &:hover {
+      color: $hover-color;
+    }
+  }
+  .background_color_nav {
+    background-color: $color-nav;
+  }
+
+  .link_h1_jordan {
+    font-family: "Nike";
+    font-size: $font-size-h1;
+    color: $color-links;
+  }
+
+  .ul_nav {
+    font-family: $fuente-ul-h2-parrafo;
+    font-size: 1.2rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 20px;
+  }
+
+  /*  ====================== PARRAFOS ============================ */
+  .titulo_parrafos {
+    font-family: "Nike";
+    font-size: $titulo-parrafos;
+  }
+
+  .parrafos_responsive p {
+    text-align: $align-text;
+    padding: 10px;
+    font-family: $fuente-ul-h2-parrafo;
+  }
+
+  /* =========================== GALERIA ========================== */
+  .galeria_imagenes {
+    display: flex;
+    flex-direction: 2 row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 50px;
+  }
+}
+/* ============== TABLETS GRANDES ============== */
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* ================ NAV ============= */
+  .navbar_nav {
+    font-family: $fuente-ul-h2-parrafo;
+    font-size: 1.2rem;
+    gap: 20px;
+    padding-left: 20px;
+  }
+
+  .nav_link {
+    color: $color-links;
+    &:hover {
+      color: $hover-color;
+    }
+  }
+  .background_color_nav {
+    background-color: black;
+  }
+
+  .link_h1_jordan {
+    font-family: "Nike";
+    font-size: 2rem;
+    color: $color-links;
+  }
+
+  .ul_nav {
+    font-family: $fuente-ul-h2-parrafo;
+    font-size: 1.2rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 20px;
+  }
+  /*=========== PORTADA ================ */
+  .portada_box_responsive {
+    display: block;
+    position: relative;
+    background-image: url("../img/portadaa2.jpg");
+    width: 750px;
+    height: 406px;
+    flex-direction: column;
+    transition: $transition;
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+  .titulo_portada {
+    position: relative;
+    top: 120px;
+    font-family: $fuente-ul-h2-parrafo;
+    color: $color-fuentes-portada-tablets-grandes;
+    font-size: 2rem;
+    padding: 20px;
+  }
+  .parrafo_portada {
+    position: relative;
+    top: 120px;
+    font-family: $fuente-ul-h2-parrafo;
+    color: $color-fuentes-portada-tablets-grandes;
+    font-size: 1.5rem;
+    padding: 10px 20px 10px;
+  }
+
+  /* =================== PARRAFOS================ */
+  .titulo_parrafos {
+    font-family: "Nike";
+    font-size: $titulo-parrafos;
+  }
+
+  .parrafos_responsive p {
+    text-align: start;
+    padding: 10px;
+    font-family: $fuente-ul-h2-parrafo;
+  }
+}
+/* ================== TABLETS GRANDES EN HORIZONTAL =============== */
+@media (min-width: 859px) and (max-width: 1199px) {
+  .navbar_nav {
+    font-family: $fuente-ul-h2-parrafo;
+    font-size: 1.2rem;
+    gap: 20px;
+    padding-left: 20px;
+  }
+
+  .nav_link {
+    color: $color-links;
+    &:hover {
+      color: $hover-color;
+    }
+  }
+  .background_color_nav {
+    background-color: $background-color;
+  }
+
+  .link_h1_jordan {
+    font-family: "Nike";
+    font-size: $font-size-h1;
+    color: $color-links;
+  }
+
+  .ul_nav {
+    font-family: $fuente-ul-h2-parrafo;
+    font-size: 1.2rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 20px;
+  }
+}
+/* ========= DESKTOP ========= */
+@media (min-width: 1200px) {
+  /* ================= NAV BAR ===================== */
+  .navbar_nav {
+    font-family: $fuente-ul-h2-parrafo;
+    font-size: 1.2rem;
+    gap: 20px;
+    padding-left: 20px;
+  }
+
+  .nav_link {
+    color: $color-links;
+    &:hover {
+      color: $hover-color;
+    }
+  }
+  .background_color_nav {
+    background-color: $background-color;
+  }
+
+  .link_h1_jordan {
+    font-family: "Nike";
+    font-size: $font-size-h1;
+    color: $color-links;
+  }
+
+  .ul_nav {
+    font-family: $fuente-ul-h2-parrafo;
+    font-size: 1.2rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 20px;
+  }
+
+  /* ==============  PORTADA =================== */
+  .portada_box_responsive {
+    display: block;
+    position: relative;
+    background-image: url("../img/portadaa.jpg");
+    width: 1910px;
+    height: 1034px;
+    flex-direction: column;
+    transition: $transition;
+  }
+
+  .portada_responsive:hover {
+    transform: scale(1.02);
+  }
+
+  .titulo_portada {
+    position: relative;
+    top: 500px;
+    font-family: "Nike";
+    color: $color-fuentes-portada-tablets-grandes;
+    font-size: 3rem;
+    padding: 20px;
+  }
+
+  .parrafo_portada {
+    background-color: #252422bd;
+    position: relative;
+    top: 500px;
+    font-family: $fuente-ul-h2-parrafo;
+    color: $color-fuentes-portada-tablets-grandes;
+    font-size: 25px;
+    padding: 10px 20px 10px;
+  }
+  .nav_responsive {
+    gap: 20px;
+    display: flex;
+    justify-content: baseline;
+    text-align: center;
+    font-family: "Nike";
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  /* ================= PARRAFOS ================ */
+  .titulo_parrafos {
+    font-family: "Nike";
+    font-size: $titulo-parrafos;
+  }
+
+  .parrafos_responsive {
+    width: 1360px;
+    & p {
+      text-align: $align-text;
+      padding: 10px;
+      font-family: $fuente-ul-h2-parrafo;
+    }
+  }
+  /* =============== GALERIA =============== */
+  .galeria_imagenes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  /* ========== FRASE ============= */
+  .frase_box p {
+    width: auto;
+    padding: 15px;
+    color: $color-fuente-parrafos;
+    border-radius: 5px;
+    margin: 0;
+    text-align: $text-align;
+  }
+}
