@@ -87,10 +87,11 @@
     margin: 0;
     gap: 20px;
   }
+    /* ==================  TITULO ================== */
   .titulo_sobre_jordan {
     text-align: $text-align;
     font-size: 3rem;
-    color: $color-titulo;
+    color: white;
     font-family: "Nike";
     margin: 20px;
   }
@@ -99,12 +100,15 @@
     font-size: $font-size-h1;
     color: $color-links;
   }
+  .body_sobre {
+    background-image: $background-color2;
+  }
 }
 /* ============ LINEA DEL TIEMPO =================*/
 .parrafos_sobre h3 {
   font-family: "Nike";
   font-size: 1.9rem;
-  color: rgb(176, 56, 56);
+  color: rgb(52, 31, 190);
   margin: 0;
   transition: $transition;
   &:hover {

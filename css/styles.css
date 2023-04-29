@@ -26,7 +26,7 @@ h2 {
 }
 
 body {
-  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  background-image: linear-gradient(-45deg, #FFC796 0%, #FF6B95 100%);
 }
 
 @font-face {
@@ -48,6 +48,24 @@ body {
 }
 .boton_smooth:hover {
   background-color: rgb(215, 70, 70);
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+}
+
+/* ============= BOTON SCROLL VARIANTE ============ */
+.boton_smooth {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 125px;
+  border: 4px solid rgb(26, 14, 193);
+  border-radius: 10px;
+  background-color: rgb(23, 50, 221);
+  color: white;
+  box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.5);
+  transition: all 300ms;
+}
+.boton_smooth:hover {
+  background-color: rgb(61, 28, 208);
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
 }
 
@@ -794,10 +812,11 @@ body {
     margin: 0;
     gap: 20px;
   }
+  /* ==================  TITULO ================== */
   .titulo_sobre_jordan {
     text-align: center;
     font-size: 3rem;
-    color: black;
+    color: white;
     font-family: "Nike";
     margin: 20px;
   }
@@ -806,12 +825,15 @@ body {
     font-size: 2rem;
     color: white;
   }
+  .body_sobre {
+    background-image: linear-gradient(-225deg, #7DE2FC 0%, #B9B6E5 100%);
+  }
 }
 /* ============ LINEA DEL TIEMPO =================*/
 .parrafos_sobre h3 {
   font-family: "Nike";
   font-size: 1.9rem;
-  color: rgb(176, 56, 56);
+  color: rgb(52, 31, 190);
   margin: 0;
   transition: all 300ms;
 }
