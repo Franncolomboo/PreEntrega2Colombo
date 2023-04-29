@@ -649,13 +649,13 @@ body {
   }
 }
 /* ============ TITTLE ========== */
-.sobre-jordan {
+.titulo-sobre-jordan {
   text-align: center;
   font-size: 3rem;
   color: black;
 }
-@media (min-width: 390px) and (max-width: 577px) {
-  .sobre-jordan {
+@media (min-width: 390px)  {
+  .titulo-sobre-jordan {
     text-align: center;
     font-size: 2.25rem;
     color: black;

@@ -52,11 +52,52 @@
   color: $color-titulo;
 }
 
-@media (min-width: 390px) and (max-width: 577px) {
+@media (min-width: 350px) {
+  /* ================== NAV ============== */
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 0 , 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+  .navbar_nav {
+    font-family: $fuente-ul-h2-parrafo;
+    font-size: 1.2rem;
+    gap: 20px;
+    padding-left: 20px;
+  }
+  .nav_link {
+    color: $color-links;
+
+    &:hover {
+      color: $hover-color;
+    }
+  }
+  .background_color_nav {
+    background-color: $color-nav;
+  }
+  .linK_h1_jordan {
+    font-family: "Nike";
+    font-size: $font-size-h1;
+    color: $color-links;
+  }
+  .ul_nav {
+    font-family: $fuente-ul-h2-parrafo;
+    font-size: 1.2rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 20px;
+  }
   .titulo_sobre_jordan {
     text-align: $text-align;
-    font-size: 2.25rem;
+    font-size: 3rem;
     color: $color-titulo;
+    font-family: "Nike";
+    margin: 20px;
+  }
+  .link_h1_jordan {
+    font-family: "Nike";
+    font-size: $font-size-h1;
+    color: $color-links;
   }
 }
 /* ============ LINEA DEL TIEMPO =================*/

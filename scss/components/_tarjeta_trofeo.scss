@@ -26,10 +26,11 @@
 }
 
 .titulo_trofeo {
+  font-family:$fuente-ul-h2-parrafo ;
   text-align: $text-align;
   padding: 10px;
   color: white;
-  font-size: 23px;
+  font-size: 1.7rem;
 }
 
 .descripcion_trofeo {

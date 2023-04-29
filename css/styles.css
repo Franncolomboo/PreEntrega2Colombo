@@ -1,7 +1,3 @@
-@font-face {
-  font-family: "Nike";
-  src: url(../fonts/futura-condensed-extra-bold.otf);
-}
 * {
   margin: 0;
   padding: 0;
@@ -33,6 +29,10 @@ body {
   background-color: #f6f4d2;
 }
 
+@font-face {
+  font-family: "Nike";
+  src: url(../fonts/futura-condensed-extra-bold.otf);
+}
 /* ============= BOTON SCROLL ============ */
 .boton_smooth {
   display: block;
@@ -108,6 +108,107 @@ body {
   padding: 15px;
 }
 
+/*============= TROFEO  ============ */
+.trofeo {
+  width: 350px;
+  height: 650px;
+  overflow: hidden;
+  background-color: rgba(222, 219, 56, 0.587);
+  box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition-property: box-shadow;
+  transition-duration: 0.9s;
+  transition: all 300ms;
+}
+
+/* ============== ESTILO DEL TROFEO  ============= */
+.trofeo {
+  font-family: "Jost", sans-serif;
+}
+.trofeo:hover {
+  box-shadow: 0 0 1.7em rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+}
+.trofeo_imagen {
+  width: 100%;
+}
+
+.titulo_trofeo {
+  font-family: "Jost", sans-serif;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  font-size: 1.7rem;
+}
+
+.descripcion_trofeo {
+  color: rgb(247, 234, 234);
+}
+
+.body_trofeo {
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+/*============= ANILLO 1 ============ */
+.anillos {
+  margin: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 130px;
+}
+
+.anillo {
+  width: 470px;
+  height: 680px;
+  overflow: hidden;
+  background-color: rgba(222, 219, 56, 0.587);
+  box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition-property: box-shadow;
+  transition-duration: 0.9s;
+  transition: all 300ms;
+}
+
+/* ============== ESTILO DEL ANILLO A ============= */
+.anillo {
+  font-family: "Jost", sans-serif;
+}
+.anillo:hover {
+  box-shadow: 0 0 1.7em rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+}
+.anillo:hover_imagen {
+  width: 100%;
+}
+
+.titulo_anillo {
+  font-family: "Nike";
+  color: white;
+  font-size: 23px;
+  text-align: center;
+}
+
+.descripcion_anillo {
+  color: rgb(247, 234, 234);
+  padding: 0.5em;
+}
+
+.body_anillo {
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
 /* ================== NAV ============== */
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 0 , 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -123,6 +224,7 @@ body {
 .nav-link {
   color: white;
 }
+
 .nav-link:hover {
   color: red;
 }
@@ -155,7 +257,7 @@ body {
   color: black;
   text-align: center;
   transition: all 300ms;
-  margin: 0;
+  margin: 20px;
 }
 .titulo_inicio:hover {
   transform: scale(1.2);
@@ -168,6 +270,9 @@ body {
   }
 }
 @media (max-width: 599px) {
+  .background-color-nav {
+    background-color: black;
+  }
   .portada_box_responsive {
     padding: 10px;
   }
@@ -359,10 +464,10 @@ body {
     gap: 20px;
     padding-left: 20px;
   }
-  .nav_link {
+  .nav-link {
     color: white;
   }
-  .nav_link:hover {
+  .nav-link:hover {
     color: red;
   }
   .background_color_nav {
@@ -417,7 +522,7 @@ body {
     color: red;
   }
   .background_color_nav {
-    background-color: #f6f4d2;
+    background-color: black;
   }
   .link_h1_jordan {
     font-family: "Nike";
@@ -447,14 +552,15 @@ body {
     transform: scale(1.02);
   }
   .titulo_portada {
+    font-family: "Nike";
     position: relative;
     top: 120px;
-    font-family: "Jost", sans-serif;
     color: aliceblue;
     font-size: 2rem;
     padding: 20px;
   }
   .parrafo_portada {
+    background-color: rgba(37, 36, 34, 0.7411764706);
     position: relative;
     top: 120px;
     font-family: "Jost", sans-serif;
@@ -488,7 +594,7 @@ body {
     color: red;
   }
   .background_color_nav {
-    background-color: #f6f4d2;
+    background-color: black;
   }
   .link_h1_jordan {
     font-family: "Nike";
@@ -521,7 +627,7 @@ body {
     color: red;
   }
   .background_color_nav {
-    background-color: #f6f4d2;
+    background-color: black;
   }
   .link_h1_jordan {
     font-family: "Nike";
@@ -607,73 +713,113 @@ body {
   }
 }
 /* ============ SOBRE JORDAN ========== */
-.main-dos {
+.main_dos {
   height: 1500px;
   font-family: "Jost", sans-serif;
 }
 
 @media (min-width: 390px) and (max-width: 412px) {
-  .main-dos {
+  .main_dos {
     height: 4000px;
   }
 }
 @media (min-width: 412px) and (max-width: 430px) {
-  .main-dos {
+  .main_dos {
     height: 3700px;
   }
 }
 @media (min-width: 430px) and (max-width: 480px) {
-  .main-dos {
+  .main_dos {
     height: 3500px;
   }
 }
 @media (min-width: 481px) and (max-width: 577px) {
-  .main-dos {
+  .main_dos {
     height: 3100px;
   }
 }
 @media (min-width: 577px) and (max-width: 769px) {
-  .main-dos {
+  .main_dos {
     height: 2900px;
   }
 }
 @media (min-width: 770px) and (max-width: 992px) {
-  .main-dos {
+  .main_dos {
     height: 2200px;
   }
 }
 @media (min-width: 993px) and (max-width: 1200px) {
-  .main-dos {
+  .main_dos {
     height: 1700px;
   }
 }
 /* ============ TITTLE ========== */
-.sobre-jordan {
+.titulo_sobre_jordan {
   text-align: center;
   font-size: 3rem;
   color: black;
 }
 
-@media (min-width: 390px) and (max-width: 577px) {
-  .sobre-jordan {
+@media (min-width: 350px) {
+  /* ================== NAV ============== */
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 0 , 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+  .navbar_nav {
+    font-family: "Jost", sans-serif;
+    font-size: 1.2rem;
+    gap: 20px;
+    padding-left: 20px;
+  }
+  .nav_link {
+    color: white;
+  }
+  .nav_link:hover {
+    color: red;
+  }
+  .background_color_nav {
+    background-color: black;
+  }
+  .linK_h1_jordan {
+    font-family: "Nike";
+    font-size: 2rem;
+    color: white;
+  }
+  .ul_nav {
+    font-family: "Jost", sans-serif;
+    font-size: 1.2rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 20px;
+  }
+  .titulo_sobre_jordan {
     text-align: center;
-    font-size: 2.25rem;
+    font-size: 3rem;
     color: black;
+    font-family: "Nike";
+    margin: 20px;
+  }
+  .link_h1_jordan {
+    font-family: "Nike";
+    font-size: 2rem;
+    color: white;
   }
 }
 /* ============ LINEA DEL TIEMPO =================*/
-.parrafos-sobre h3 {
+.parrafos_sobre h3 {
   font-family: "Nike";
   font-size: 1.9rem;
   color: rgb(176, 56, 56);
   margin: 0;
   transition: all 300ms;
 }
-.parrafos-sobre h3:hover {
+.parrafos_sobre h3:hover {
   transform: scale(1.04);
 }
 
-.parrafos-sobre p {
+.parrafos_sobre p {
   font-family: "Jost", sans-serif;
   font-size: 1.3rem;
   padding: 25px 10px 25px 10px;
@@ -681,13 +827,14 @@ body {
 }
 
 /* ======== FOOTER ========== */
-.footer-sobre {
+.footer_sobre {
   text-align: center;
 }
 
 /* =================== SNKRS ====================== */
 /* ========== PRODUCTOS =========== */
 .titulo_productos {
+  font-family: "Nike";
   color: white;
   text-align: center;
   font-size: 3rem;
@@ -731,6 +878,7 @@ body {
 
 /* ========== SALON DORADO PAGINA ====== */
 .titulo_salon {
+  font-family: "Nike";
   margin: 20px;
   text-align: center;
   font-size: 3rem;
@@ -760,6 +908,7 @@ div article p {
 
 /* ============= SECCION ANILLOS============ */
 .titulo_anillos {
+  font-family: "Nike";
   margin: 20px;
   padding: 10px;
   text-align: center;
@@ -774,8 +923,10 @@ div article p {
 }
 /* ============ PAGINA ESTADISTICAS =============== */
 .titulo_estadisticas {
+  font-family: "Nike";
   text-align: center;
   font-size: 3rem;
+  margin: 20px;
 }
 
 /* =========== TABLA ================ */
