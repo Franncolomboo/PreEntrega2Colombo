@@ -46,14 +46,14 @@
   }
 }
 /* ============ TITTLE ========== */
-.sobre_jordan {
+.titulo_sobre_jordan {
   text-align: $text-align;
   font-size: $font-size-titulo;
   color: $color-titulo;
 }
 
 @media (min-width: 390px) and (max-width: 577px) {
-  .sobre_jordan {
+  .titulo_sobre_jordan {
     text-align: $text-align;
     font-size: 2.25rem;
     color: $color-titulo;
