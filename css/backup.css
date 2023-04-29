@@ -23,7 +23,7 @@ ul {
   display: flex;
   gap: 60px;
   font-family: "Jost", sans-serif;
-  padding: 20px;
+  padding: 10px;
 }
 h2 {
   font-family: "Jost", sans-serif;
@@ -99,7 +99,6 @@ body {
 .titulo-inicio:hover {
   transform: scale(1.2);
 }
-
 /* =============== PORTADA ============== */
 @media (max-width: 500px) {
   .parrafo-portada {
@@ -165,10 +164,6 @@ body {
   padding: 0;
   margin: 0;
 }
-.dunk-jordan {
-  display: none;
-}
-
 /* ============ GALERIA ========= */
 .galeria-titulo {
   color: rgb(176, 56, 56);
@@ -237,14 +232,6 @@ body {
 }
 /* ======== TABLETS ========= */
 @media (min-width: 600px) and (max-width: 768px) {
-  .logo-responsive {
-    display: block;
-    justify-self: start;
-    align-self: center;
-    grid-area: logo;
-    padding: 1em;
-  }
-
   /* ================= NAV ================= */
   .navbar-nav {
     font-family: "Jost", sans-serif;
@@ -320,13 +307,9 @@ body {
     padding: 10px;
     font-family: "Jost", sans-serif;
   }
-  /* =============== MODIFICACION DE LA PORTADA ============== */
 }
+/* =============== MODIFICACION DE LA PORTADA ============== */
 @media (min-width: 769px) and (max-width: 858px) {
-  .logo-responsive {
-    display: none;
-  }
-
   /* ================= NAV =================== */
   .navbar-nav {
     font-family: "Jost", sans-serif;

@@ -1,59 +1,6 @@
-@font-face {
-  font-family: "Nike";
-  src: url(../fonts/futura-condensed-extra-bold.otf);
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  scroll-behavior: smooth;
-}
-
-a {
-  text-decoration: none;
-  color: aliceblue;
-}
-
-ul {
-  list-style: none;
-  display: flex;
-  gap: 60px;
-  font-family: "Jost", sans-serif;
-  padding: 10px;
-}
-
-h2 {
-  font-family: "Jost", sans-serif;
-}
-
-body {
-  background-color: #f6f4d2;
-}
-
-/* ============= BOTON SCROLL ============ */
-.boton-smooth {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 125px;
-  border: 4px solid rgb(176, 56, 56);
-  border-radius: 10px;
-  background-color: rgb(176, 56, 56);
-  color: white;
-  box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.5);
-  transition: all 300ms;
-}
-.boton-smooth:hover {
-  background-color: rgb(215, 70, 70);
-  box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
-}
-
 /* ================== NAV ============== */
 .navbar-nav {
-  font-family: "Jost", sans-serif;
+  font-family: $fuente-ul-h2-parrafo;
   font-size: 1.2rem;
   gap: 20px;
   padding-left: 20px;
@@ -61,13 +8,12 @@ body {
 
 .nav-link {
   color: white;
+  &:hover {
+    color: $hover-color;
+  }
 }
-.nav-link:hover {
-  color: red;
-}
-
 .background-color-nav {
-  background-color: black;
+  background-color: $color-nav;
 }
 
 .link-h1-jordan {
@@ -77,7 +23,7 @@ body {
 }
 
 .ul-nav {
-  font-family: "Jost", sans-serif;
+  font-family: $fuente-ul-h2-parrafo;
   font-size: 1.2rem;
   list-style: none;
   display: flex;
@@ -85,7 +31,6 @@ body {
   margin: 0;
   gap: 20px;
 }
-
 /* =============== INICIO ============ */
 .titulo_inicio {
   font-family: "Nike";
@@ -93,67 +38,68 @@ body {
   font-size: 3rem;
   color: black;
   text-align: center;
-  transition: all 300ms;
+  transition: $transition;
   margin: 0;
+  &:hover {
+    transform: scale(1.2);
+  }
 }
-.titulo_inicio:hover {
-  transform: scale(1.2);
-}
-
 /* =============== PORTADA ============== */
 @media (max-width: 500px) {
   .parrafo_portada {
     padding: 10px;
   }
 }
+
 @media (max-width: 599px) {
   .portada_box_responsive {
     padding: 10px;
   }
+
   .titulo_portada {
     color: rgb(176, 56, 56);
     font-family: "Nike";
-    font-size: 1.7rem;
-    text-align: start;
+    font-size: $font-size-titulos;
+    text-align: $align-text;
     margin: 0;
     border-radius: 7px;
   }
+
   .parrafo_portada {
     border-radius: 7px;
     font-size: 1.3rem;
-    font-family: "Jost", sans-serif;
-    text-align: start;
+    font-family: $fuente-ul-h2-parrafo;
+    text-align: $align-text;
     margin: 0;
   }
 }
 /* ============= PARRAFOS ============= */
 .titulo_parrafos {
   font-family: "Nike";
-  text-align: start;
-  font-size: 1.7rem;
-  transition: all 300ms;
+  text-align: $align-text;
+  font-size: $font-size-titulos;
+  transition: $transition;
   margin: 0;
   color: rgb(176, 56, 56);
-}
-.titulo_parrafos:hover {
-  transform: scale(1.02);
+  &:hover {
+    transform: scale(1.02);
+  }
 }
 
 .parrafos_responsive {
-  text-align: start;
+  text-align: $align-text;
   display: grid;
   grid-template-columns: 1;
   margin: 10px;
-  font-family: "Jost", sans-serif;
+  font-family: $fuente-ul-h2-parrafo;
+  & p {
+    text-align: $align-text;
+    font-family: $fuente-ul-h2-parrafo;
+    font-size: 1.3rem;
+    padding: 10px;
+    margin: 0;
+  }
 }
-.parrafos_responsive p {
-  text-align: start;
-  font-family: "Jost", sans-serif;
-  font-size: 1.3rem;
-  padding: 10px;
-  margin: 0;
-}
-
 .titulo_parrafos {
   font-family: "Nike";
   font-size: 2rem;
@@ -163,20 +109,18 @@ body {
   padding: 0;
   margin: 0;
 }
-
 /* ============ GALERIA ========= */
 .galeria_titulo {
   color: rgb(176, 56, 56);
   text-align: center;
   font-family: "Nike";
   font-size: 3rem;
-  transition: all 300ms;
+  transition: $transition;
   margin: 0;
+  &:hover {
+    transform: scale(1.2);
+  }
 }
-.galeria_titulo:hover {
-  transform: scale(1.2);
-}
-
 .galeria_imagenes {
   display: flex;
   flex-direction: row;
@@ -190,52 +134,53 @@ body {
   align-content: center;
   gap: 50px;
   height: 100%;
-  transition: all 300ms;
+  transition: $transition;
+  &:hover {
+    transform: scale(1.05);
+  }
 }
-.fotos_galeria:hover {
-  transform: scale(1.05);
-}
-
 .frase_box {
   padding: 15px;
   margin: 0;
+  & p {
+    color: $color-fuente-parrafos;
+    font-family: $fuente-ul-h2-parrafo;
+    border: 3px solid rgb(176, 56, 56);
+    margin: 0;
+    text-align: justify;
+    font-size: 1.3rem;
+    padding: 10px;
+    border-radius: 7px;
+  }
 }
-.frase_box p {
-  color: black;
-  font-family: "Jost", sans-serif;
-  border: 3px solid rgb(176, 56, 56);
-  margin: 0;
-  text-align: justify;
-  font-size: 1.3rem;
-  padding: 10px;
-  border-radius: 7px;
-}
-
 /* ================ TABLETS ====================== */
 @media (min-width: 600px) and (max-width: 768px) {
   /* ================= NAV ================= */
   .navbar_nav {
-    font-family: "Jost", sans-serif;
+    font-family: $fuente-ul-h2-parrafo;
     font-size: 1.2rem;
     gap: 20px;
     padding-left: 20px;
   }
+
   .nav_link {
     color: white;
-  }
-  .nav_link:hover {
-    color: red;
+    &:hover {
+      color: $hover-color;
+    }
   }
   .background_color_nav {
     background-color: black;
   }
+
   .link_h1_jordan {
     font-family: "Nike";
     font-size: 2rem;
     color: white;
   }
+
   .ul_nav {
-    font-family: "Jost", sans-serif;
+    font-family: $fuente-ul-h2-parrafo;
     font-size: 1.2rem;
     list-style: none;
     display: flex;
@@ -243,7 +188,9 @@ body {
     margin: 0;
     gap: 20px;
   }
+
   /* ======== PORTADA ======== */
+
   .portada_box_responsive {
     display: block;
     position: relative;
@@ -251,10 +198,10 @@ body {
     flex-direction: column;
     height: 406px;
     width: 750px;
-    transition: all 300ms;
-  }
-  .portada_box_responsive:hover {
-    transform: scale(1.02);
+    transition: $transition;
+    &:hover {
+      transform: scale(1.02);
+    }
   }
   .titulo_portada {
     color: white;
@@ -271,12 +218,11 @@ body {
     font-family: "Nike";
     font-size: 2rem;
   }
+
   .parrafos_responsive p {
-    text-align: start;
+    text-align: $align-text;
     padding: 10px;
-    font-family: "Jost", sans-serif;
+    font-family: $fuente-ul-h2-parrafo;
   }
 }
 /* =============== MODIFICACION DE LA PORTADA ============== */
-
-/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "Nike";
+  src: url(../fonts/futura-condensed-extra-bold.otf);
+}
+$background-color: #f6f4d2;
+$fuente-ul-h2-parrafo: "Jost", sans-serif;
+$color-nav: black;
+$align-text: start;
+$transition: all 300ms;
+$color-fuente-parrafos: black;
+$font-size-titulos: 1.7rem;
+$hover-color: red;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+ul {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+  font-family: $fuente-ul-h2-parrafo;
+  padding: 10px;
+}
+h2 {
+  font-family: $fuente-ul-h2-parrafo;
+}
+
+body {
+  background-color: $background-color;
+}
