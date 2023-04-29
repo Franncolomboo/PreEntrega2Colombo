@@ -1,66 +1,66 @@
 /* ============ SOBRE JORDAN ========== */
-.main-dos {
+.main_dos {
   height: 1500px;
   font-family: $fuente-ul-h2-parrafo;
 }
 
 @media (min-width: 390px) and (max-width: 412px) {
-  .main-dos {
+  .main_dos {
     height: 4000px;
   }
 }
 
 @media (min-width: 412px) and (max-width: 430px) {
-  .main-dos {
+  .main_dos {
     height: 3700px;
   }
 }
 
 @media (min-width: 430px) and (max-width: 480px) {
-  .main-dos {
+  .main_dos {
     height: 3500px;
   }
 }
 
 @media (min-width: 481px) and (max-width: 577px) {
-  .main-dos {
+  .main_dos {
     height: 3100px;
   }
 }
 
 @media (min-width: 577px) and (max-width: 769px) {
-  .main-dos {
+  .main_dos {
     height: 2900px;
   }
 }
 
 @media (min-width: 770px) and (max-width: 992px) {
-  .main-dos {
+  .main_dos {
     height: 2200px;
   }
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
-  .main-dos {
+  .main_dos {
     height: 1700px;
   }
 }
 /* ============ TITTLE ========== */
-.sobre-jordan {
+.sobre_jordan {
   text-align: $text-align;
   font-size: $font-size-titulo;
   color: $color-titulo;
 }
 
 @media (min-width: 390px) and (max-width: 577px) {
-  .sobre-jordan {
+  .sobre_jordan {
     text-align: $text-align;
     font-size: 2.25rem;
     color: $color-titulo;
   }
 }
 /* ============ LINEA DEL TIEMPO =================*/
-.parrafos-sobre h3 {
+.parrafos_sobre h3 {
   font-family: "Nike";
   font-size: 1.9rem;
   color: rgb(176, 56, 56);
@@ -70,7 +70,7 @@
     transform: scale(1.04);
   }
 }
-.parrafos-sobre p {
+.parrafos_sobre p {
   font-family: $fuente-ul-h2-parrafo;
   font-size: 1.3rem;
   padding: 25px 10px 25px 10px;
@@ -78,6 +78,6 @@
 }
 
 /* ======== FOOTER ========== */
-.footer-sobre {
+.footer_sobre {
   text-align: $text-align;
 }
