@@ -165,8 +165,8 @@ body {
 }
 
 .anillo {
-  width: 470px;
-  height: 680px;
+  width: 390px;
+  height: 750px;
   overflow: hidden;
   background-color: rgba(222, 219, 56, 0.587);
   box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.5);
@@ -916,9 +916,17 @@ div article p {
   color: white;
 }
 
-@media (max-width: 450px) {
+@media (min-width: 850px) {
   .anillo {
-    height: 600px;
+    width: 390px;
+    height: 680px;
+    overflow: hidden;
+    background-color: rgba(222, 219, 56, 0.587);
+    box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition-property: box-shadow;
+    transition-duration: 0.9s;
+    transition: all 300ms;
   }
 }
 /* ============ PAGINA ESTADISTICAS =============== */
