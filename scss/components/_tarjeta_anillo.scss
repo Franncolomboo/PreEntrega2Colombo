@@ -26,8 +26,6 @@
 
   &:hover {
     box-shadow: 0 0 1.7em rgba(0, 0, 0, 0.5);
-    transform: scale(1.1);
-
     &_imagen {
       width: 100%;
     }
@@ -43,7 +41,7 @@
 
 .descripcion_anillo {
   color: rgb(247, 234, 234);
-  padding: .5em;
+  padding: 0.5em;
 }
 
 .body_anillo {

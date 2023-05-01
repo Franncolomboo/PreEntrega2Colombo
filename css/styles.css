@@ -109,7 +109,7 @@ body {
 }
 .tarjeta:hover {
   box-shadow: 0 0 1.7em rgba(0, 0, 0, 0.5);
-  transform: scale(1.1);
+  transition: all 1000ms;
 }
 
 .titulo_del_producto {
@@ -145,7 +145,6 @@ body {
 }
 .trofeo:hover {
   box-shadow: 0 0 1.7em rgba(0, 0, 0, 0.5);
-  transform: scale(1.1);
 }
 .trofeo_imagen {
   width: 100%;
@@ -200,7 +199,6 @@ body {
 }
 .anillo:hover {
   box-shadow: 0 0 1.7em rgba(0, 0, 0, 0.5);
-  transform: scale(1.1);
 }
 .anillo:hover_imagen {
   width: 100%;
@@ -274,11 +272,7 @@ body {
   font-size: 3rem;
   color: #fff;
   text-align: center;
-  transition: all 300ms;
   margin: 20px;
-}
-.titulo_inicio:hover {
-  transform: scale(1.2);
 }
 
 /* =============== PORTADA ============== */

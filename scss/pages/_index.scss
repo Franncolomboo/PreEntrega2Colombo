@@ -43,11 +43,7 @@
   font-size: 3rem;
   color: #fff;
   text-align: center;
-  transition: $transition;
   margin: 20px;
-  &:hover {
-    transform: scale(1.2);
-  }
 }
 /* =============== PORTADA ============== */
 @media (max-width: 500px) {
