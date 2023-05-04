@@ -113,6 +113,7 @@ body {
 }
 
 .titulo_del_producto {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: white;
   font-size: 1.5rem;
 }
