@@ -44,3 +44,9 @@ h2 {
 body {
   background-image: $background-color;
 }
+@mixin FlexTienda {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}

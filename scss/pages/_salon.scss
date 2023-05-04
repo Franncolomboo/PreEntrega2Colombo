@@ -22,10 +22,7 @@
   }
 }
 .trofeos {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  @include FlexTienda;
   gap: 150px;
 }
 div article p {

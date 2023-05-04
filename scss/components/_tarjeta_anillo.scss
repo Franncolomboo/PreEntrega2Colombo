@@ -1,10 +1,7 @@
-/*============= ANILLO 1 ============ */
+/*============= ANILLO ============ */
 .anillos {
   margin: 40px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  @include FlexTienda;
   gap: 130px;
 }
 
