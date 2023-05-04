@@ -41,6 +41,11 @@ div article p {
   font-size: 3rem;
   color: white;
 }
+.anillos {
+  margin: 40px;
+  @include FlexTienda;
+  gap: 130px;
+}
 @media (min-width: 850px) {
   .anillo {
     width: 390px;

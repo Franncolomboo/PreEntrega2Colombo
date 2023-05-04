@@ -172,15 +172,6 @@ body {
 }
 
 /*============= ANILLO ============ */
-.anillos {
-  margin: 40px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  gap: 130px;
-}
-
 .anillo {
   width: 390px;
   height: 750px;
@@ -930,6 +921,15 @@ div article p {
   text-align: center;
   font-size: 3rem;
   color: white;
+}
+
+.anillos {
+  margin: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 130px;
 }
 
 @media (min-width: 850px) {
