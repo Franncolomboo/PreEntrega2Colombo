@@ -26,7 +26,7 @@ h2 {
 }
 
 body {
-  background-image: linear-gradient(-45deg, #FFC796 0%, #FF6B95 100%);
+  background-image: linear-gradient(-45deg, #ffc796 0%, #ff6b95 100%);
 }
 
 @font-face {
@@ -114,7 +114,7 @@ body {
 
 .titulo_del_producto {
   color: white;
-  font-size: 23px;
+  font-size: 1.5rem;
 }
 
 .body_producto {
@@ -207,7 +207,7 @@ body {
 .titulo_anillo {
   font-family: "Nike";
   color: white;
-  font-size: 23px;
+  font-size: 1.5rem;
   text-align: center;
 }
 
@@ -820,7 +820,7 @@ body {
     color: white;
   }
   .body_sobre {
-    background-image: linear-gradient(-225deg, #7DE2FC 0%, #B9B6E5 100%);
+    background-image: linear-gradient(-225deg, #7de2fc 0%, #b9b6e5 100%);
   }
 }
 /* ============ LINEA DEL TIEMPO =================*/
