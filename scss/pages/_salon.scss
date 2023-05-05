@@ -97,6 +97,19 @@ div article p {
   @include FlexTienda;
   gap: 130px;
 }
+@media (min-width: 370px) and (max-width: 450px) {
+  .anillo {
+    width: 390px;
+    height: 730px;
+    overflow: hidden;
+    background-color: rgba(222, 219, 56, 0.587);
+    box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition-property: box-shadow;
+    transition-duration: 0.9s;
+    transition: $transition;
+  }
+}
 @media (min-width: 850px) {
   .anillo {
     width: 390px;
