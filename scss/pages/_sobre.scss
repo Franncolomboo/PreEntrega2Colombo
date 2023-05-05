@@ -87,7 +87,7 @@
     margin: 0;
     gap: 20px;
   }
-    /* ==================  TITULO ================== */
+  /* ==================  TITULO ================== */
   .titulo_sobre_jordan {
     text-align: $text-align;
     font-size: 3rem;
@@ -101,14 +101,69 @@
     color: $color-links;
   }
   .body_sobre {
-    background-image: $background-color2;
+    background-image: linear-gradient(
+      to right,
+      #7de2fc 0%,
+      #9f9ae2 60%,
+      #8266e1 80%,
+      #701ddd 100%
+    );
+    background-size: 400% 400%;
+    -webkit-animation: GradientAnimation 15s ease infinite;
+    -moz-animation: GradientAnimation 15s ease infinite;
+    animation: GradientAnimation 15s ease infinite;
+    @-webkit-keyframes GradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    @-moz-keyframes GradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    @keyframes GradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
   }
 }
 /* ============ LINEA DEL TIEMPO =================*/
 .parrafos_sobre h3 {
+  text-decoration: underline;
+  text-decoration-color: blue;
+  text-decoration-style: solid;
+  text-decoration-thickness: 4px;
   font-family: "Nike";
   font-size: 1.9rem;
-  color: rgb(52, 31, 190);
+  color: rgb(255, 255, 255);
   margin: 0;
   transition: $transition;
   &:hover {

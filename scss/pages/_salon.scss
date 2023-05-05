@@ -1,6 +1,57 @@
 /* ======= SALON DORADO RESET AND CONFIGS ========= */
 .body_salon_dorado {
-  background-color: rgb(120, 30, 30);
+  background-image: linear-gradient(
+    to right,
+    #f1b570 0%,
+    #f18759,
+    #f75353 100%
+  );
+  background-size: 400% 400%;
+  -webkit-animation: GradientAnimation 15s ease infinite;
+  -moz-animation: GradientAnimation 15s ease infinite;
+  animation: GradientAnimation 15s ease infinite;
+
+  @-webkit-keyframes GradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  @-moz-keyframes GradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  @keyframes GradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 }
 .footer_salon {
   text-align: $text-align;
@@ -49,7 +100,7 @@ div article p {
 @media (min-width: 850px) {
   .anillo {
     width: 390px;
-    height: 680px;
+    height: 690px;
     overflow: hidden;
     background-color: rgba(222, 219, 56, 0.587);
     box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.5);

@@ -26,10 +26,6 @@ h2 {
   font-family: "Jost", sans-serif;
 }
 
-body {
-  background-image: linear-gradient(-45deg, #ffc796 0%, #ff6b95 100%);
-}
-
 @font-face {
   font-family: "Nike";
   src: url(../fonts/futura-condensed-extra-bold.otf);
@@ -137,7 +133,7 @@ body {
   width: 350px;
   height: 650px;
   overflow: hidden;
-  background-color: rgba(222, 219, 56, 0.587);
+  background-color: rgb(222, 219, 56);
   box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.5);
   cursor: pointer;
   transition-property: box-shadow;
@@ -165,7 +161,10 @@ body {
 }
 
 .descripcion_trofeo {
-  color: rgb(247, 234, 234);
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: "Noto Serif", serif;
+  color: rgba(241, 241, 241, 0.698);
 }
 
 .body_trofeo {
@@ -180,9 +179,9 @@ body {
 /*============= ANILLO ============ */
 .anillo {
   width: 390px;
-  height: 750px;
+  height: 760px;
   overflow: hidden;
-  background-color: rgba(222, 219, 56, 0.587);
+  background-color: rgb(222, 219, 56);
   box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.5);
   cursor: pointer;
   transition-property: box-shadow;
@@ -222,6 +221,47 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 15px;
+}
+
+.body_index {
+  background-image: linear-gradient(to right, #ffc796 0%, #f1a071, #ff6b95 100%);
+  background-size: 400% 400%;
+  -webkit-animation: GradientAnimation 15s ease infinite;
+  -moz-animation: GradientAnimation 15s ease infinite;
+  animation: GradientAnimation 15s ease infinite;
+}
+@-webkit-keyframes GradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes GradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes GradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* ================== NAV ============== */
@@ -818,14 +858,55 @@ body {
     color: white;
   }
   .body_sobre {
-    background-image: linear-gradient(-225deg, #7de2fc 0%, #b9b6e5 100%);
+    background-image: linear-gradient(to right, #7de2fc 0%, #9f9ae2 60%, #8266e1 80%, #701ddd 100%);
+    background-size: 400% 400%;
+    -webkit-animation: GradientAnimation 15s ease infinite;
+    -moz-animation: GradientAnimation 15s ease infinite;
+    animation: GradientAnimation 15s ease infinite;
+  }
+  @-webkit-keyframes GradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @-moz-keyframes GradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @keyframes GradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
 }
 /* ============ LINEA DEL TIEMPO =================*/
 .parrafos_sobre h3 {
+  text-decoration: underline;
+  text-decoration-color: blue;
+  text-decoration-style: solid;
+  text-decoration-thickness: 4px;
   font-family: "Nike";
   font-size: 1.9rem;
-  color: rgb(52, 31, 190);
+  color: rgb(255, 255, 255);
   margin: 0;
   transition: all 300ms;
 }
@@ -880,7 +961,44 @@ body {
 
 /* ======= SALON DORADO RESET AND CONFIGS ========= */
 .body_salon_dorado {
-  background-color: rgb(120, 30, 30);
+  background-image: linear-gradient(to right, #f1b570 0%, #f18759, #f75353 100%);
+  background-size: 400% 400%;
+  -webkit-animation: GradientAnimation 15s ease infinite;
+  -moz-animation: GradientAnimation 15s ease infinite;
+  animation: GradientAnimation 15s ease infinite;
+}
+@-webkit-keyframes GradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes GradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes GradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .footer_salon {
@@ -942,7 +1060,7 @@ div article p {
 @media (min-width: 850px) {
   .anillo {
     width: 390px;
-    height: 680px;
+    height: 690px;
     overflow: hidden;
     background-color: rgba(222, 219, 56, 0.587);
     box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.5);
@@ -952,6 +1070,48 @@ div article p {
     transition: all 300ms;
   }
 }
+/* ================ BACKGROUND ================ */
+.body_estadisticas {
+  background-image: linear-gradient(to right, #ffc796 0%, #f1a071, #ff6b95 100%);
+  background-size: 400% 400%;
+  -webkit-animation: GradientAnimation 15s ease infinite;
+  -moz-animation: GradientAnimation 15s ease infinite;
+  animation: GradientAnimation 15s ease infinite;
+}
+@-webkit-keyframes GradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes GradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes GradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 /* ============ PAGINA ESTADISTICAS =============== */
 .titulo_estadisticas {
   color: white;

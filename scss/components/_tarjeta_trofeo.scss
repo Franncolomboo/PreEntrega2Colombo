@@ -3,7 +3,7 @@
   width: 350px;
   height: 650px;
   overflow: hidden;
-  background-color: rgba(222, 219, 56, 0.587);
+  background-color: rgb(222, 219, 56);
   box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.5);
   cursor: pointer;
   transition-property: box-shadow;
@@ -33,7 +33,10 @@
 }
 
 .descripcion_trofeo {
-  color: rgb(247, 234, 234);
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: "Noto Serif", serif;
+  color: rgba(241, 241, 241, 0.698);
 }
 
 .body_trofeo {
