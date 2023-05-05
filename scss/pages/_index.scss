@@ -11,12 +11,10 @@
 
 .nav-link {
   color: white;
+  &:hover {
+    color: red;
+  }
 }
-
-.nav-link:hover {
-  color: red;
-}
-
 .background-color-nav {
   background-color: black;
 }
